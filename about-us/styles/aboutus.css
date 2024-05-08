@@ -1,0 +1,13 @@
+img {
+    width: 100%;
+    height: auto;
+}
+
+#img-us {
+    width: 50%;
+    text-align: center;
+    align-content: center;
+}
+div.carousel-caption {
+    color: black;
+}
