@@ -1,13 +1,16 @@
+body {
+    font-family: Poppins;
+}
+
 img {
     width: 100%;
     height: auto;
 }
 
-#img-us {
-    width: 50%;
-    text-align: center;
-    align-content: center;
+#carouselUs {
+    image-rendering: 50%;
 }
-div.carousel-caption {
+
+button {
     color: black;
 }
