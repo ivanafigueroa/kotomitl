@@ -1,0 +1,25 @@
+Body {
+    font-family: "Poppins";
+    font-size: 15px;
+    background-color: #e3f3dc;
+    min-height: 100vh;
+    text-align: center;
+}
+
+#cont-bar {
+    background-color: #caacde;
+    margin: 0;
+    padding: 0;
+}
+
+form {
+    padding: 50px 50px;
+    background-color: #f3dceb;
+    text-align: center;
+}
+
+.input-group {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+}
