@@ -2,15 +2,27 @@ body {
     font-family: Poppins;
 }
 
-img {
+img#main-img {
     width: 100%;
     height: auto;
 }
 
-#carouselUs {
-    image-rendering: 50%;
-}
-
 button {
     color: black;
+}
+
+.carousel-control-prev-icon {
+    background-color: gray;
+    position: absolute;
+    left: 0;
+}
+.carousel-control-next-icon {
+    background-color: gray;
+    position: absolute;
+    right: 0;
+}
+
+#geekgirls {
+    max-width: 50%;
+    margin: auto;
 }
