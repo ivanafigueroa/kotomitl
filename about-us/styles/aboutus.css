@@ -1,10 +1,14 @@
 body {
     font-family: Poppins;
+    background-color: #F3DCEB;
 }
 
 img {
     width: 100%;
-    height: auto;
+    height: 350px;
+}
+.row{
+    text-align: center;
 }
 
 #carouselUs {
