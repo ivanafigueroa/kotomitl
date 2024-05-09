@@ -1,0 +1,39 @@
+/* Estilo para la sección "¿De dónde nace este proyecto?" */
+#aboutproyect {
+    background-color: #F3DCEB;
+    padding: 20px;
+    border-radius: 0px;
+}
+
+/* Estilos para las secciones Misión, Visión y Valores */
+.col-sm-4 {
+    background-color: #F3DCEB;
+    padding: 20px;
+    border-radius: 0px;
+}
+
+/* Estilos para la sección "Nosotras" (carrusel) */
+#carouselUs {
+    background-color: #CCAFD4;
+    padding: 20px;
+    border-radius: 0px;
+}
+
+.carousel-caption {
+    background-color: rgba(0, 0, 0, 0.5); /* Fondo semi-transparente */
+    color: #fff; /* Texto blanco */
+    padding: 10px; /* Espacio alrededor del texto */
+    border-radius: 5px; /* Bordes redondeados */
+}
+
+.carousel-item img {
+    max-width: 100%;
+    height: auto;
+}
+.carousel-item .d-flex {
+    height: 100%; /* Hace que el contenedor flex ocupe toda la altura del carrusel */
+}
+.carousel-item .d-flex img {
+    max-height: 100%; /* Ajusta la altura máxima de la imagen al 100% del contenedor flex */
+    margin: auto; /* Centra la imagen horizontalmente */
+}
