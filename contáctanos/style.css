@@ -1,0 +1,22 @@
+ body {
+  display: list-item;
+  align-items: flex;
+  justify-content: center;
+  height: 100vh;
+  background-color: #E4F3DC;
+  font-family: "Poppins" !important;
+  
+  
+ }
+
+ h1{
+    padding-left: 700px;
+    font-size: xx-large;
+   
+ }
+
+ p {
+    padding-left: 700px;
+    font-size: xx-large;
+    
+ }
