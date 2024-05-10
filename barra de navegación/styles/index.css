@@ -1,0 +1,62 @@
+/* Estilos para la barra de navegación */
+.navbar {
+    background-color: #caadec; /* Color de fondo */
+}
+
+.nav-link {
+    color: white; /* Color del texto */
+}
+
+.nav-link:hover {
+    color: #f8f9fa; /* Cambio de color al pasar el mouse */
+}
+
+/* Estilos para el botón de búsqueda */
+.form-control {
+    width: 300px; /* Ancho del campo de búsqueda */
+}
+
+/* Estilos para el botón Busqueda */
+button[type="button"] {
+    background-color: #caadec; /* Color de fondo */
+    color: white; /* Color del texto */
+    border: none; /* Quita el borde */
+    padding: 8px 16px; /* Espaciado interno */
+    cursor: pointer; /* Cambia el cursor al pasar el mouse */
+}
+
+button[type="button"]:hover {
+    background-color: #ab8ec3; /* Cambio de color al pasar el mouse */
+}
+
+/* Estilos para el ícono del menú */
+#menu {
+    margin-top: -5px; /* Ajuste del margen superior */
+}
+
+/* Estilos para los íconos del carrito y usuario */
+#Carrito {
+    margin-top: -5px; /* Ajuste del margen superior */
+}
+
+#user{
+    margin-top: -5px; margin-left: 600px;
+}
+
+/* Estilos para el botón del menú en dispositivos móviles */
+.navbar-toggler-icon {
+    background-color: white; /* Color del ícono */
+}
+
+/* Estilos para el menú desplegable */
+.dropdown-menu {
+    background-color: #caadec; /* Color de fondo */
+}
+
+.dropdown-item {
+    color: white; /* Color del texto */
+}
+
+.dropdown-item:hover {
+    background-color: #ab8ec3; /* Cambio de color al pasar el mouse */
+}
