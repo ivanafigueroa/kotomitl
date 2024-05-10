@@ -1,0 +1,96 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200; 1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 20px;
+}
+
+body{
+    background-color: #b4e69f;
+}
+.header {
+    background-color: #ccafda;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 90 px;
+    padding: 5px 10px;
+}
+.header.header {
+    height: 70px;
+    width: auto;
+
+}
+
+.carrito {
+    align-items: letf;
+    height: 85 px;
+    width: auto;
+    cursor: pointer;
+    align-items: center;
+}
+
+.usuario {
+    
+    align-items: rigth;
+    height: 85 px;
+    width: auto;
+    cursor: pointer;
+    align-items: center;
+}
+
+#menu {
+    height: 70px;
+    width: 60 px;
+    justify-content: space-between;
+    padding: 5px 10px;
+    align-items: center;
+}
+
+.header {
+    list-style: none;
+}
+.header li {
+    background-color: #caacde;
+   
+}
+.header li :hover {
+    background-color: #bae69f;
+    color: black;
+    text-decoration:nones;
+    padding: 10px 15px;
+    display: block;
+}
+.header > li {
+    float:grid;
+   
+}
+.header li ul {
+    display:none;
+    position: absolute;
+    min-width: 160px;
+    text-decoration: none;
+}
+.header li:hover > ul {
+    display:block;
+    
+}
+.usuario, .carrito, .header.header, .busqueda{
+    display: grid;
+    grid-template-columns: 10% 25% auto auto 10%;
+
+}
+
+.busqueda {
+    background-color: #caacde;
+    border-bottom: black;
+    cursor: pointer;
+}
+
+.barra{
+    width: 50px;
+    height: auto;
+}
