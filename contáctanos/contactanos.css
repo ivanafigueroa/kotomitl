@@ -54,7 +54,7 @@ label {
 /*Botón*/
 .btn-custom-purple {
     background-color: #ccafd4;
-    border-radius: 0;
+    border-radius: 10px;
     width: 100px;
     font-size: 20px;
     font-weight: 500;
