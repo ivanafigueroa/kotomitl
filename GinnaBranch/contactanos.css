@@ -5,6 +5,11 @@ Body {
     min-height: 100vh;
     text-align: center;
 }
+#img-1 {
+    width: 50px; 
+    height: auto; 
+    padding: 3px;
+}
 
 #cont-bar {
     background-color: #caacde;
@@ -17,7 +22,7 @@ Body {
 form {
     padding: 50px 50px;
     background-color: #f3dceb;
-    text-align: center;
+    text-align: left;
 }
 
 .input-group {
