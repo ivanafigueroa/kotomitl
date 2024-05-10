@@ -1,0 +1,63 @@
+
+      * {
+          padding: 0%;
+          margin: 0%;
+      }
+      #header{
+          margin: center;
+          width: 500px;
+          color-scheme: #caacde;
+          
+      }
+      ul, ol{
+          list-style: none;
+      }
+      .nav li a {
+          background-color: #CAACDE;
+         
+      }
+      .nav{ color: #0c0c0c; background-color: #CAACDE;
+
+}
+#menu{
+    border: 10px solid #CAACDE;
+    background-color: #caacde; alt:"hamburguesa"; 
+
+
+}
+
+    
+
+#Carrito{ border: 10px solid #CAACDE;
+    background-color: #caacde; alt:"carrito"; 
+    margin-left: 50px; position: absolute; top: 08px; left:25px;
+}
+      .nav li a:hover {
+          background-color: #caacde;
+          color: #CAACDE;
+          text-decoration:none ;
+          padding: 10px 15px;
+          display: block;
+      }
+      .nav > li {
+          float:left;
+      }
+      .nav li ul {
+          display:none;
+          position: absolute;
+          min-width: 160px;
+      }
+      .nav li:hover > ul {
+          display: block;
+      }
+
+.d-flex{
+    background-color: #CAACDE;
+    color: #000000; /* Color del texto en el campo de búsqueda */
+    border-color: #CCCCCC;
+}
+
+
+    
+
+      
