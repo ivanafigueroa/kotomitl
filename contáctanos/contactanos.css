@@ -4,22 +4,59 @@ Body {
     background-color: #e3f3dc;
     min-height: 100vh;
     text-align: center;
+    margin: 0; /*Para eliminar el margen de toda la página*/
 }
 
+header {
+    height: 100px; /*Aquí debería ir la barra de navegación*/
+}
+
+/*Tamaño de logo*/
+img {
+    width: 80px;
+
+}
+
+/*Barra morada*/
 #cont-bar {
     background-color: #caacde;
-    margin: 0;
-    padding: 0;
 }
 
+/*Estilo del recuadro de form*/
 form {
     padding: 50px 50px;
     background-color: #f3dceb;
+    margin: 80px;
     text-align: center;
 }
 
 .input-group {
     display: flex;
-    flex-direction: column;
-    text-align: left;
+    flex-direction: column; /*Para colocar el contenido en columna*/
+    text-align: left; /*Alinear el texto a la izquierda*/
 }
+
+label {
+    font-size: 12px;
+    font-weight: 500; /*Grosor de la letra*/
+}
+
+input, textarea {
+    font-family: "Poppins";
+    font-size: 10px;
+    margin-bottom: 10px; /*Margen inferior*/
+    border: 1px dashed #000;
+    background-color: #f3dceb;
+    border-radius: 2px;
+    outline: none; /*Eliminar que se marque el input al ingresar datos*/
+}
+
+/*Botón*/
+.btn {
+    font-family: "Poppins";
+    font-size: 10px;
+    background-color: #ccafd4;
+    width: 80px;
+    border: 1px solid #000;
+} 
+
