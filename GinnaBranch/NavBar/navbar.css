@@ -1,0 +1,20 @@
+/*Cuando se junta el menu y la search bar se quita el estilo de bootstrap, con esto se recupera*/
+#custom-toggler {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    outline: none;
+  }
+
+  /*El tamaño para que la imagen del carrito sea del mismo tamaño que el menu*/
+.toggle-image {
+    width: 30px;
+    height: 30px;
+}
+/*El tamaño de la imagen de usuario*/
+.search-image {
+    width: 30px;
+    height: 30px;
+    margin-right: 10px;
+    background-color: transparent;
+}
