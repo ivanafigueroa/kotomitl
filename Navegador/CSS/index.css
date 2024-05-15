@@ -1,5 +1,15 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200; 1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
-
+@media only screen and (max-width: 768px) {
+    
+    *{
+        font-size: 14px;
+    }
+}
+@media only screen and (min-width: 769px) {
+    *{
+        font-size: 18px;
+    }
+}
 *{
     box-sizing: border-box;
     margin: 0;
@@ -31,6 +41,7 @@ body{
     width: auto;
     cursor: pointer;
     align-items: center;
+    margin: left 300px;
 }
 
 .usuario {
@@ -40,6 +51,7 @@ body{
     width: auto;
     cursor: pointer;
     align-items: center;
+   
 }
 
 #menu {
@@ -76,21 +88,45 @@ body{
 }
 .header li:hover > ul {
     display:block;
-    
+
 }
-.usuario, .carrito, .header.header, .busqueda{
+
+.header{
     display: grid;
-    grid-template-columns: 10% 25% auto auto 10%;
-
+    grid-template-columns: auto auto auto auto auto auto auto;
+}
+.header.header, .carrito{
+    grid-column-start: 1;
+    grid-column-end: 1;
 }
 
-.busqueda {
-    background-color: #caacde;
+.usuario{
+    grid-column-start:-2 ;
+    grid-column-end: -3;
+}
+.container-fluid {
+    grid-column-start: -2;
+    grid-column-end: -1;
+    grid-row-start: 1;
+    grid-row-end: 1;
+}
+
+
+
+
+.container-fluid {
+    /*background-color: #caacde;
     border-bottom: black;
     cursor: pointer;
+    width: 300px;
+    height: auto;*/
+   
+        width: 200px;
+        height: 30px;
+        padding: 5px;
+        border: none;
+        border-radius: 5px;
+        margin-right: 10px;
+    
 }
 
-.barra{
-    width: 50px;
-    height: auto;
-}
