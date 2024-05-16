@@ -31,7 +31,7 @@ option {
 }
 
 .form-control {
-    border: 3px dashed #ccafd4;
+    border: 3px solid #ccafd4;
     font-size: 20px;
 }
 
