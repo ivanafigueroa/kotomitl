@@ -1,0 +1,26 @@
+#productos-container {
+  width: 500px;
+  margin: auto; /*auto para que se centren los elementos*/
+
+}
+
+.tarjeta-producto {
+  display: flex; /*para que queden uno de lado del otro*/
+  gap: 20px; /*La distancia que tendrán de separación los elementos*/
+  align-items: center; /*para centrar elementos*/
+}
+
+
+.tarjeta-producto img { /*las imagenes dentro del contenedor tarjeta-producto*/
+  height: 100px;
+  aspect-ratio: 1.5; /*para que las imagenes no tengan distinto tamaño, ocupen el mismo espacio*/
+}
+
+/*Para acomodar las letras*/
+.tarjeta-producto h3{
+ width:130px;
+}
+
+#totales {
+  text-align: center;
+}
