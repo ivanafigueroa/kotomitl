@@ -58,3 +58,8 @@
     background-color: #ccafd4; /* Cambia el color de fondo del botón a blanco al pasar el mouse sobre él */
     border-color: #f3dceb; /* Mantiene el color del borde del botón a verde al pasar el mouse sobre él */
 }
+/*Páginas*/
+iframe {
+  width: 100%;
+  height: 100vh;
+}

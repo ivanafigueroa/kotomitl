@@ -1,0 +1,51 @@
+body {
+    font-family: Poppins;
+    background-color: #E4F3DC;
+}
+
+img#main-img {
+    width: 100%;
+    height: auto;
+}
+
+h3{
+    font-size: 336;
+}
+p {
+    text-align: justify;
+    font-size: 18px;
+}
+
+#aboutproyect {
+    background-color: #F3DCEB;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 15px 15px;
+}
+
+.carousel-control-prev-icon {
+    background-color: gray;
+    position: absolute;
+    left: 0;
+}
+.carousel-control-next-icon {
+    background-color: gray;
+    position: absolute;
+    right: 0;
+}
+
+#geekgirls {
+    max-width: 50%;
+    margin: 20px auto;
+    position: relative;
+    background-color: #CAACDE;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    
+}
+
+.row {
+    border-collapse: separate;
+    border-spacing: 10px 4px;
+}
+
+h3 {
+    text-align: center;
+}
