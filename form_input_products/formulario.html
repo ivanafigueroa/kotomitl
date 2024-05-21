@@ -8,13 +8,21 @@
     <link rel="stylesheet" href="./styles.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900&display=swap" rel="stylesheet">
+    <style>
+        .radio-green .form-check-input:checked ~ .form-check-label {
+            color: green;
+        }
+        .hidden {
+            display: none;
+        }
+    </style>
 </head>
 <body>
     <div class="container mt-5 mb-5">
         <h2>Formulario para prendas</h2>
         <br>
-        <form  class="was-validated">
+        <form class="was-validated">
             <div class="form-group">
                 <label for="imgArticles">Sube las imágenes de tu prenda.</label>
                 <input type="file" class="form-control-file" id="imgArticles" multiple required>
@@ -28,22 +36,23 @@
             <div class="form-group">
                 <label for="category">Selecciona la categoría de la prenda:</label>
                 <select class="form-control" id="category" required>
-                    <option value="">Abrigo</option>
-                    <option value="">Blusa</option>
-                    <option value="">Camisa</option>
-                    <option value="">Camiseta</option>
-                    <option value="">Chamarra</option>
-                    <option value="">Crop Top</option>
-                    <option value="">Falda</option>
-                    <option value="">Mallón</option>
-                    <option value="">Pantalón</option>
-                    <option value="">Pants</option>
-                    <option value="">Ropa de dormir</option>
-                    <option value="">Short</option>
-                    <option value="">Sudadera</option>
-                    <option value="">Suetér</option>
-                    <option value="">Top</option>
-                    <option value="">Vestido</option>
+                    <option value="">Selecciona una opción</option>
+                    <option value="abrigo">Abrigo</option>
+                    <option value="blusa">Blusa</option>
+                    <option value="camisa">Camisa</option>
+                    <option value="camiseta">Camiseta</option>
+                    <option value="chamarra">Chamarra</option>
+                    <option value="crop-top">Crop Top</option>
+                    <option value="falda">Falda</option>
+                    <option value="mallon">Mallón</option>
+                    <option value="pantalon">Pantalón</option>
+                    <option value="pants">Pants</option>
+                    <option value="ropa-dormir">Ropa de dormir</option>
+                    <option value="short">Short</option>
+                    <option value="sudadera">Sudadera</option>
+                    <option value="sueter">Suéter</option>
+                    <option value="top">Top</option>
+                    <option value="vestido">Vestido</option>
                 </select>
                 <div class="invalid-feedback">
                     Selecciona una categoría
@@ -56,54 +65,56 @@
                     Por favor ingresa la descripción de la prenda
                 </div>
             </div>
-            <fieldset class="form-group">
-                <div class="col-sm-12">
-                  <legend class="col-form-label row pt-0">¿Tiene algún detalle la prenda?</legend>
-                  <div class="col-sm-10">
-                    <div class="form-check">
-                      <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios1" value="option1" checked required>
-                      <label class="form-check-label" for="gridRadios1">
-                        Si
-                      </label>
-                    </div>
-                    <div class="form-check">
-                      <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios2" value="option2" required>
-                      <label class="form-check-label" for="gridRadios2">
+            <fieldset class="form-group" id="detailFieldset">
+                <legend class="col-form-label pt-0">¿Tiene algún detalle la prenda?</legend>
+                <div class="form-check radio-green">
+                    <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios1" value="si" required>
+                    <label class="form-check-label" for="gridRadios1">
+                        Sí
+                    </label>
+                </div>
+                <div class="form-check radio-green">
+                    <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios2" value="no" required>
+                    <label class="form-check-label" for="gridRadios2">
                         No
-                      </label>
-                    </div>
-                  </div>
+                    </label>
                 </div>
             </fieldset>
-            <div class="form-group">
+            <div class="form-group hidden" id="detailDescription">
                 <label class="form-label" for="detail">Describe el detalle de la prenda</label>
-                <textarea class="form-control" id="detail" rows="5" required></textarea>
+                <textarea class="form-control" id="detail" rows="5"></textarea>
                 <div class="invalid-feedback">
                     Por favor ingresa la descripción
                 </div>
             </div>
             <div class="form-group text-center">
-                <button type="submit" class="btn-custom-purple" required>Enviar</button>
+                <button type="submit" class="btn btn-custom-purple form-control">Enviar</button>
             </div>
         </form>
     </div>
-    <script src="./validacion.js"></script>
+
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
     <script>
-        (function () {
-          'use strict'
-          var forms = document.querySelectorAll('.was-validated')
-          Array.prototype.slice.call(forms)
-            .forEach(function (form) {
-              form.addEventListener('submit', function (event) {
-                if (!form.checkValidity()) {
-                  event.preventDefault()
-                  event.stopPropagation()
-                }
-                form.classList.add('was-validated')
-              }, false)
-            })
-        })()
+        document.addEventListener('DOMContentLoaded', function() {
+            var radios = document.querySelectorAll('input[name="gridRadios"]');
+            var detailDescription = document.getElementById('detailDescription');
+
+            radios.forEach(function(radio) {
+                radio.addEventListener('change', function() {
+                    if (this.value === 'si') {
+                        detailDescription.classList.remove('hidden');
+                        document.getElementById('detail').required = true;
+                    } else {
+                        detailDescription.classList.add('hidden');
+                        document.getElementById('detail').required = false;
+                    }
+                    radios.forEach(function(r) {
+                        var label = r.nextElementSibling;
+                        label.style.color = 'green';
+                    });
+                });
+            });
+        });
     </script>
 </body>
 </html>
