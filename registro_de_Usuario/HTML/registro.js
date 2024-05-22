@@ -43,6 +43,26 @@ document.addEventListener('DOMContentLoaded', () => {
             valid = false;
         }
 
+        //Validacion nombre
+        const nombrePattern =  /^[a-zA-ZÀ-ÿ\s]{1,40}$/;
+        if (!nombrePattern.test(nombreInput.value.trim())) {
+            showAlert('El nombre no es válido.');
+            valid = false;
+        }
+        //Validacion apellido
+        const apellidosPattern =  /^[a-zA-ZÀ-ÿ\s]{1,40}$/;
+        if (!apellidosPattern.test(apellidosInput.value.trim())) {
+            showAlert('El apellido no es válido.');
+            valid = false;
+        }
+        //Validacion contraseña
+        const passwordPattern =  /^[a-zA-ZÀ-ÿ\s]{1,40}$/;
+        if (!passwordPattern.test(passwordInput.value.trim())) {
+            showAlert('La contraseña no es válida.');
+            valid = false;
+        }
+
+
         // Validación de correo electrónico
         const emailPattern = /^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,6}$/;
         if (!emailPattern.test(emailInput.value.trim())) {
@@ -51,9 +71,9 @@ document.addEventListener('DOMContentLoaded', () => {
         }
 
         // Validación de número de teléfono
-        const phonePattern = /^\d{10}$/;
-        if (!phonePattern.test(telefonoInput.value.trim())) {
-            showAlert('El número de teléfono no es válido. Debe tener 10 dígitos.');
+        const telefonoPattern = /^\d{10}$/; 
+        if (!telefonoPattern.test(telefonoInput.value.trim())) {
+            showAlert('El número de teléfono no es válido. Debe tener 10 dígitos.Solo se aceptan numeros');
             valid = false;
         }
 
@@ -61,6 +81,7 @@ document.addEventListener('DOMContentLoaded', () => {
             const userData = {
                 nombre: nombreInput.value.trim(),
                 apellidos: apellidosInput.value.trim(),
+                password: passwordInput.value.trim(),
                 telefono: telefonoInput.value.trim(),
                 email: emailInput.value.trim(),
             };
