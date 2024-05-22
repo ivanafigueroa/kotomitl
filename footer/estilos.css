@@ -1,0 +1,121 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+    text-decoration: none;
+}
+
+/*:::::Pie de Pagina*/
+.barra-decorativa {
+    height: 49px; /* Altura de la barra */
+    background-color: #ccafd4; /* Color de la barra */
+    margin-top: 10px; /* Espacio entre la barra y el pie de página */
+    width: 100%;
+    background-image: url(./assets/version\ png.png);
+    /* Otra propiedad opcional: */
+    background-repeat: no-repeat; /* Evita que la imagen se repita */
+    background-size: 50px; /* Ajusta el tamaño de la imagen para cubrir todo el elemento */
+}
+
+.pie-pagina {
+    width: 100%;
+    background-color: #e3f3dc;
+}
+
+.pie-pagina .grupo-1 {
+    width: 100%;
+    max-width: 1200px;
+    margin: 50px auto; /* Centra el grupo horizontalmente */
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 50px;
+    padding: 45px 0px;
+    text-decoration: none;
+    
+}
+
+.pie-pagina .grupo-1 .box {
+    text-align: center; /* Centra el contenido horizontalmente */
+    text-decoration: none;
+}
+/* Estilos para el botón */
+.boton {
+    display: inline-flex; /* Para que ocupe toda la anchura disponible */
+    text-align: center; /* Para centrar el texto */
+    background-color: #ccafd4; /* Color de fondo del botón */
+    color: white; /* Color del texto */
+    padding: 10px 20px; /* Espacio interno del botón */
+    text-decoration: none; /* Quita el subrayado de los enlaces */
+    border-radius: 5px; /* Borde redondeado */
+    margin-top: 10px; /* Espacio superior */
+}
+.boton:hover {
+    background-color: #a894b3; /* Cambia el color de fondo al pasar el mouse */
+}
+
+.pie-pagina .grupo-1 .box h2 {
+    color: #ccafd4;
+    margin-bottom: 25px;
+    font-size: 20px;
+}
+
+.pie-pagina .grupo-1 .box p {
+    color: #ccacde;
+    margin-bottom: 10px;
+}
+
+.pie-pagina .grupo-1 .red-social a {
+    display: inline-block;
+    text-decoration: none;
+    font-size: 50px;
+    width: 50px;
+    height: 50px;
+    line-height: 45px;
+    color: #000000;
+    margin-right: 10px;
+    background-color: #e3f3dc;
+    text-align: center;
+    transition: all 300ms ease;
+}
+
+.pie-pagina .grupo-1 .red-social a:hover {
+    color: #ccacde;
+}
+
+.pie-pagina .grupo-2 {
+    background-color: transparent;
+    padding: 15px 10px;
+    text-align: center;
+    color: black;
+}
+
+/* Estilos para los iconos laterales */
+.iconos-laterales {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end; 
+    margin-top: -300px; /* Mueve los iconos hacia arriba */
+}
+
+/* Estilos para las imágenes de los iconos */
+.iconos-laterales img {
+    width: 80px; /* Cambia el tamaño de las imágenes según sea necesario */
+    height: auto; /* Mantén la proporción del tamaño */
+    margin-bottom: 10px; /* Espacio entre cada icono */
+}
+
+.pie-pagina .grupo-2 small {
+    font-size: 15px;
+}
+
+@media screen and (max-width: 800px) {
+    .pie-pagina .grupo-1 {
+        width: 90%;
+        grid-template-columns: repeat(1, 1fr);
+        grid-gap: 30px;
+        padding: 35px 0px;
+    }
+}
