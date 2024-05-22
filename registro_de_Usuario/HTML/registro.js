@@ -55,8 +55,8 @@ document.addEventListener('DOMContentLoaded', () => {
             showAlert('El apellido no es válido.');
             valid = false;
         }
-        //Validacion contraseña
-        const passwordPattern =  /^[a-zA-ZÀ-ÿ\s]{1,40}$/;
+        //Validacion contraseña de 4 a 12 digitos
+        const passwordPattern =  /^.{4,12}$/;
         if (!passwordPattern.test(passwordInput.value.trim())) {
             showAlert('La contraseña no es válida.');
             valid = false;
