@@ -26,6 +26,7 @@ h2, h3 {
 form {
     padding: 50px 50px;
     background-color: #f3dceb;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
     margin: 80px;
     text-align: left;
 }
@@ -54,8 +55,9 @@ label {
 /*Botón*/
 .btn-custom-purple {
     background-color: #ccafd4;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
     border-radius: 10px;
-    width: 150px;
+    width: 100px;
     font-size: 20px;
     font-weight: 500;
 }

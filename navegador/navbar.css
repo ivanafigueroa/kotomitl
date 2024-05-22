@@ -1,60 +1,62 @@
+body {
+  font-family: "Poppins";
+}
 /*Cuando se junta el menu y la search bar se quita el estilo de bootstrap, con esto se recupera*/
 #custom-toggler {
     background-color: transparent;
     border: none;
     cursor: pointer;
     outline: none;
-  }
-
-  /*El tamaño para que la imagen del carrito sea del mismo tamaño que el menu*/
-.toggle-image {
-    width: 30px;
-    height: 30px;
 }
-/*El tamaño de la imagen de usuario*/
-.search-image {
-    width: 30px;
-    height: 30px;
-    margin-right: 10px;
-    background-color: transparent;
+
+/*Tamaño de imagenes de los botones home y carrito*/
+.btn-img {
+  width: 40px;
+}
+
+.btn {
+  padding: 0;
+  width: 50px;
+  margin: 0 5px;
+}
+
+.btn-user {
+  width: 30px;
 }
 
 #colorNav{
     background-color: #CAACDE !important;
-
 }
 
 .navbar-toggler-icon {
     background-image: url("data:image/svg+xml,%3csvg xmlns='menu.svg' viewBox='0 0 30 30'%3e%3cpath stroke='coral' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
-  }
+}
+/*Edición del ícono de hamburguesa*/
+.icono-menu img{
+  margin-top: -25px;
+  width: 35px;
+  cursor: pointer;
+}
 
-  /* Se agrego edición de icono de hamburguesa */
-  .icono-menu{
-    margin: -20px 0 0 -10px;
-    position: relative;
-    z-index: 10;
-  }
+.toggle-image {  /*Las medidas de las imagenes van en situación contraria */
+  margin-right: -90px;
+  margin-top: -35px;
+  width: 45px;
+}
 
-  .icono-menu img{
-    vertical-align: top;
-    width: 30px;
-    cursor: pointer;
-  }
-
-  .toggle-image {  /*Las medidas de las imagenes van en situación contraria */
-    margin-right: -70px;
-    margin-top: -55px;
-    width: 40px;
-  }
-
-  .btn-outline-success {
-    color: #010101; /* Cambia el color del texto del botón a blanco */
-    background-color: #ccafd4; /* Cambia el color de fondo del botón a verde */
-    border-color: #e3f3dc; /* Cambia el color del borde del botón a verde */
-  }
+.btn-outline-success {
+  color: #010101; /* Cambia el color del texto del botón a blanco */
+  background-color: #ccafd4; /* Cambia el color de fondo del botón a verde */
+  border-color: #e3f3dc; /* Cambia el color del borde del botón a verde */
+}
   
-  .btn-outline-success:hover {
-    color: #000000; /* Cambia el color del texto del botón a verde al pasar el mouse sobre él */
-    background-color: #ccafd4; /* Cambia el color de fondo del botón a blanco al pasar el mouse sobre él */
-    border-color: #f3dceb; /* Mantiene el color del borde del botón a verde al pasar el mouse sobre él */
+.btn-outline-success:hover {
+  color: #000000; /* Cambia el color del texto del botón a verde al pasar el mouse sobre él */
+  background-color: #ccafd4; /* Cambia el color de fondo del botón a blanco al pasar el mouse sobre él */
+  border-color: #f3dceb; /* Mantiene el color del borde del botón a verde al pasar el mouse sobre él */
+}
+/*Páginas*/
+iframe {
+  width: 100%;
+  height: 100vh;
 }
