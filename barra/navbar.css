@@ -1,0 +1,42 @@
+/*Cuando se junta el menu y la search bar se quita el estilo de bootstrap, con esto se recupera*/
+#custom-toggler {
+    background-color: #caacde;
+    border: none;
+    cursor: pointer;
+    outline: none;
+  }
+
+  /*El tamaño para que la imagen del carrito sea del mismo tamaño que el menu*/
+.toggle-image {
+    width: 50px;
+    height: 45px;
+    margin-right: 50px;
+}
+/*El tamaño de la imagen de usuario*/
+.search-image {
+    width: 50px;
+    height: 45px;
+    margin-right: 10px;
+    background-color: #caacde;
+}
+.navbar {
+    background-color: #caacde; /* Cambia el color de fondo de la barra de navegación */
+  }
+  
+/* navbar.css */
+    .btn-outline-success {
+        color: #010101; /* Cambia el color del texto del botón a blanco */
+        background-color: #ccafd4; /* Cambia el color de fondo del botón a verde */
+        border-color: #e3f3dc; /* Cambia el color del borde del botón a verde */
+      }
+      
+      .btn-outline-success:hover {
+        color: #000000; /* Cambia el color del texto del botón a verde al pasar el mouse sobre él */
+        background-color: #ccafd4; /* Cambia el color de fondo del botón a blanco al pasar el mouse sobre él */
+        border-color: #f3dceb; /* Mantiene el color del borde del botón a verde al pasar el mouse sobre él */
+}
+
+
+   
+      
+/* Agrega estilos personalizados al botón de búsqueda */
