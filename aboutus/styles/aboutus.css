@@ -4,16 +4,14 @@ body {
 }
 
 img#main-img {
-    width: 100%;
-    height: auto;
+    max-width: 100%;
+    max-height: 100%;
+    align-items: center;
 }
 
-h3{
-    font-size: 336;
-}
+
 p {
     text-align: justify;
-    font-size: 18px;
 }
 
 #aboutproyect {
