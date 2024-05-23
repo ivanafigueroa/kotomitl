@@ -56,7 +56,7 @@ document.addEventListener('DOMContentLoaded', () => {
             valid = false;
         }
         //Validacion contraseña de 4 a 12 digitos
-        const passwordPattern =  /^.{4,12}$/;
+        const passwordPattern =  /^(?=.*[A-Z])(?=.*\d)(?=.*[@.\-!])[A-Za-z\d@.\-!]{6,12}$/; // se añaden carácteres especiales
         if (!passwordPattern.test(passwordInput.value.trim())) {
             showAlert('La contraseña no es válida.');
             valid = false;
@@ -73,7 +73,7 @@ document.addEventListener('DOMContentLoaded', () => {
         // Validación de número de teléfono
         const telefonoPattern = /^\d{10}$/; 
         if (!telefonoPattern.test(telefonoInput.value.trim())) {
-            showAlert('El número de teléfono no es válido. Debe tener 10 dígitos.Solo se aceptan numeros');
+            showAlert('El número de teléfono no es válido. Debe tener 10 dígitos. Solo se aceptan numeros');
             valid = false;
         }
 

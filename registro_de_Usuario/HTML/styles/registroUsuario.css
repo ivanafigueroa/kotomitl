@@ -8,8 +8,8 @@ body {
 }
 
 form {
-    margin-top: 10vw;
-    margin-bottom:10vw;
+    margin-top: 5vw;
+    margin-bottom:5vw;
 }
 
 input {
@@ -48,4 +48,7 @@ input#check.form-check-input {
     font-size: large;
     font: bold;
     color: gray;
+}
+p {
+    font-size: small;
 }
