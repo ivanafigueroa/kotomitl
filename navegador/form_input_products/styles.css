@@ -1,7 +1,7 @@
 body {
     background-color: #e3f3dc;
     font-family: "Poppins";
-    font-size: 20px;
+    font-size: small;
     display: flex;
     flex-direction: column;
     align-content: center;
@@ -16,7 +16,6 @@ body {
 
 h2 {
     text-align: center;
-    font-size: 40px;
     font-weight: 700;
     padding: 20px;
     margin: 10px;
@@ -32,7 +31,6 @@ option {
 
 .form-control {
     border: 3px solid #ccafd4;
-    font-size: 20px;
 }
 
 .form-control:focus {

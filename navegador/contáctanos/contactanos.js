@@ -13,6 +13,8 @@ document.getElementById('form')
       .then(() => {
         btn.value = 'Enviar';
         alert('Tu mensaje fue enviado ¡Gracias por contactarte con nosotras!');
+
+        this.reset(); //Limpiar formulario después de enviarlo
       }, (err) => {
         btn.value = 'Enviar';
         alert(JSON.stringify(err));

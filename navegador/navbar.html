@@ -10,6 +10,9 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./footer.css">
+     <!--Iconos-->
+     <script src="https://kit.fontawesome.com/eb496ab1a0.js" crossorigin="anonymous"></script>
 
 </head>
 
@@ -26,7 +29,7 @@
         </div>
         </button>
         <!--Botón de carrito-->  
-        <a href="./carrito/carrito.html" target="paginas" class="btn">
+        <a href="./compras/cart.html" target="paginas" class="btn">
           <img src="./Assets/carritowhite.png" alt="Imagen del botón" class="btn-img">
         </a>
         <!--Botón de inicio-->
@@ -41,13 +44,11 @@
         <!-- Crea un enlace con la clase "navbar-brand" que sirve como el logotipo o el título de la página. Lo cambie solo para tener datos -->
         <ul class="navbar-nav me-auto mb-2 mb-lg-0">
           <li class="nav-item">
-            <a class="nav-link" aria-current="page" href="#">Mi cuenta</a>
-          <!-- Crea un elemento de lista para un enlace de navegación "Mi cuenta", con la clase "nav-item" para estilos de Bootstrap -->
           <!-- Lo tienen que revisar para que no los mande a la pag actual, sino solo copien y peguen el de Link, este venia por default pero no es como lo tenemos en el diseño -->
             <a class="nav-link" href="#">Mis Pedidos</a> <!--Link sencillo-->
             <a class="nav-link" href="#">Mis Favoritos</a>
             <a class="nav-link" href="./contáctanos/contactanos.html" target="paginas">Contáctanos</a>
-            <a class="nav-link" href="./catálogo/catalogo.html" target="paginas">Catálogo</a>
+            <a class="nav-link" href="./compras/index.html" target="paginas">Catálogo</a>
           </li>
         </ul>
       </div>
@@ -75,13 +76,49 @@
     <iframe class="nav-link" name="paginas" src="" frameborder="0"></iframe>
   </main>
 
-  <footer>
-    
-      <h2>Pie de la página</h2>
-      <a href="./aboutus/indexaboutus.html" target="paginas">Sobre nosotras</a>
-      <a href="#">Formulario de venta</a>
-  
-  </footer>
+  <footer class="pie-pagina">
+    <div class="barra-decorativa"></div>
+    <div class="grupo-1">
+        <div class="box">
+            <a href="#">
+                <img src="./Assets/ekotomitl-morado.png" alt="E-Kotomitl" class="img-frase">
+            </a>
+            <a href="./form_input_products/formulario.html" class="boton" target="paginas">¡Te compramos tu ropa!</a>
+            <!--<a href="./aboutus/indexaboutus.html" class="boton" target="paginas">Sobre nosotras</a>-->
+        </div>
+
+        <div class="box">
+            <h2>Cambios y devoluciones</h2>
+            <h2>Ayuda</h2>
+            <h2>Políticas</h2>
+        </div>
+        
+        <div class="box">
+            <h2>Compártenos</h2>
+            <div class="red-social">
+                <a href="#" class="fa fa-facebook"></a>
+                <a href="#" class="fa fa-instagram"></a>
+                <a href="#" class="fa fa-twitter"></a>
+            </div>
+        </div>
+    </div>
+  <!--  <div class="grupo-3">
+        <div class="iconos-laterales">
+            <a href="pagina1.html">
+                <img src="./assets/questionpurple.png" alt="Icono 1">
+            </a>
+            <a href="pagina2.html">
+                <img src="./assets/pricemorado.png" alt="Icono 2">
+            </a>
+            <a href="pagina3.html">
+                <img src="./assets/contactmorado.png" alt="Icono 3">
+            </a>
+        </div>
+    </div> -->
+    <div class="grupo-2">
+        <small>&copy; 2024 <b> E-kotomitl</b> -Todos los Derechos Reservados.</small>
+    </div>
+</footer>
 
 </body>
 </html>
