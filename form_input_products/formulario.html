@@ -88,7 +88,7 @@
                 </div>
             </div>
             <div class="form-group text-center">
-                <button type="submit" class="btn btn-custom-purple form-control">Enviar</button>
+                <button type="submit" class="btn btn-custom-purple">Enviar</button>
             </div>
         </form>
     </div>
@@ -108,10 +108,6 @@
                         detailDescription.classList.add('hidden');
                         document.getElementById('detail').required = false;
                     }
-                    radios.forEach(function(r) {
-                        var label = r.nextElementSibling;
-                        label.style.color = 'green';
-                    });
                 });
             });
         });
