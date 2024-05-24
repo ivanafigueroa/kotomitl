@@ -1,0 +1,73 @@
+[  
+    {
+        "id": 1,
+        "prenda": "Blusa",
+        "precio": 100,
+        "descripcion": "Lorem ipsum dolor sit amet. Ut cumque exercitationem qui maiores Quis sit deserunt reiciendis.",
+        "imagen": "./Assets/blusa1.webp"
+    },
+    {
+        "id": 2,
+        "prenda": "Blusa ",
+        "precio": 200,
+        "descripcion": "Lorem ipsum dolor sit amet. Ut cumque exercitationem qui maiores Quis sit deserunt reiciendis.",
+        "imagen":"./Assets/blusa2.webp"
+    },
+    {
+        "id": 3,
+        "prenda": "Chamarra",
+        "precio": 300,
+        "descripcion": "Lorem ipsum dolor sit amet. Ut cumque exercitationem qui maiores Quis sit deserunt reiciendis.",
+        "imagen": "./Assets/chamarra1.webp"
+    },
+    {
+        "id": 4,
+        "prenda": " Jeans",
+        "precio": 400,
+        "descripcion": "Lorem ipsum dolor sit amet. Ut cumque exercitationem qui maiores Quis sit deserunt reiciendis.",
+        "imagen": "./Assets/jeans1.webp"
+    },
+    {
+        "id": 5,
+        "prenda": "Jeans ",
+        "precio": 500,
+        "descripcion": "Lorem ipsum dolor sit amet. Ut cumque exercitationem qui maiores Quis sit deserunt reiciendis.",
+        "imagen": "./Assets/jeans2 (1).webp"
+    },
+    {
+        "id": 6,
+        "prenda": "Pijama",
+        "precio": 600,
+        "descripcion": "Lorem ipsum dolor sit amet. Ut cumque exercitationem qui maiores Quis sit deserunt reiciendis.",
+        "imagen": "./Assets/pijama.webp"
+    },
+    {
+        "id": 7,
+        "prenda": "Pijama",
+        "precio": 700,
+        "descripcion": "Lorem ipsum dolor sit amet. Ut cumque exercitationem qui maiores Quis sit deserunt reiciendis.",
+        "imagen": "./Assets/pijama2.webp"
+    },
+    {
+        "id": 8,
+        "prenda": "Short",
+        "precio": 800,
+        "descripcion": "Lorem ipsum dolor sit amet. Ut cumque exercitationem qui maiores Quis sit deserunt reiciendis.",
+        "imagen": "./Assets/short1.webp"
+    },
+    {
+        "id": 9,
+        "prenda": "Short ",
+        "precio": 900,
+        "descripcion": "Lorem ipsum dolor sit amet. Ut cumque exercitationem qui maiores Quis sit deserunt reiciendis.",
+        "imagen": "./Assets/short2.webp"
+
+    },
+    {
+        "id": 10,
+        "prenda": "Sudadera",
+        "precio": 1000,
+        "descripcion": "Lorem ipsum dolor sit amet. Ut cumque exercitationem qui maiores Quis sit deserunt reiciendis.",
+        "imagen": "./Assets/sudadera1.webp"
+    }
+]
