@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="./styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+</head>
+<body>
+    
+    <nav class="navbar custom-navbar fixed-top">
+        <div class="container-fluid d-flex justify-content-between align-items-center"> <!--Contenedor que ocupa 100% el ancho-->
+          <!--Alinear a la izquierda-->
+          <div class="d-flex align-items-center">
+            <!-- Botón de menú -->
+            <button class="navbar-toggler me-3" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+                <!--<span class="navbar-toggler-icon"></span>-->
+                <img src="./Assents/menu.png" alt="" class="btn-img">
+              </button>
+              <!-- Botón de Carrito -->
+              <a href="#" class="btn">
+                <img src="./Assents/carrito blanco.png" alt="Imagen carrito" class="btn-img">
+              </a>
+              <!--Botón de Inicio-->
+              <a href="#" class="btn">
+                <img src="./Assents/Logo.png" alt="Imagen inicio" class="btn-img">
+                Inicio
+              </a>
+          </div>  
+          <!--Contenedor del menú-->
+          <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+            <!--Encabezado del menú-->
+            <div class="offcanvas-header d-flex align-items-center">
+              <h5 class="offcanvas-title mb-0">¡Hola! Bienvenida a E-Kotomitl</h5>
+              <!--Botón de cierre del menú-->
+              <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            </div>
+            <hr>
+            <!--Cuerpo del menú-->
+            <div class="offcanvas-body">
+              <!--Listado del menú-->
+              <ul class="navbar-nav justify-content-end flex-grow-1 pe-3 mt-3">
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Inicia sesión o regístrate</a>
+                    <a class="nav-link" href="#">Catálogo</a>
+                    <a class="nav-link" href="#">Mis Pedidos</a>
+                    <a class="nav-link" href="#">
+                      <img src="./Assents/corazón.png" alt="" class="btn-img">
+                      Mis Favoritos
+                    </a>
+                    <a class="nav-link" href="#">
+                      <img src="./Assents/contactanos negro.png" alt="" class="btn-img">
+                      Contáctanos
+                    </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <!--Termina sección del menú-->
+          <div class="ms-auto d-flex">
+            <!-- Abre un contenedor que alinea elementos a la derecha, utilizando clases de Bootstrap. -->
+            <form class="d-flex" role="search">
+              <!-- Abre un formulario para la funcionalidad de búsqueda con la clase "d-flex" para alinear elementos en línea. -->
+              <a href="#" class="btn mx-2">
+                <img src="./Assents/logo usuario blanco.png" alt="Imagen del botón" class="btn-img">
+              </a>
+              <!--Imagen de usuario. El orden aqui si es importante entoces que quede antes del imput -->
+              <input class="form-control me-2" type="search" placeholder="Buscar" aria-label="Search">
+              <!-- Crea un campo de entrada para ingresar texto de búsqueda con clases de Bootstrap para el estilo y atributos de accesibilidad. --> <!--Hay que pensar bien si lo queremos dejar porque implica mucho js. Lo podemos remplazar con el nombre de la app-->
+              <button class="btn btn-outline-success" type="submit">
+                <img class="btn-img" src="./Assents/search.png" alt="">
+              </button>
+              
+              <!-- Crea un botón de búsqueda con estilos de Bootstrap. Para cambiar el estilo hay que ponerle id -->
+            </form>
+          </div>           
+        </div>
+      </nav>
+    
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+</body>
+</html>
