@@ -88,6 +88,12 @@ document.addEventListener('DOMContentLoaded', () => {
 
             // Llamar a la función para crear el JSON y manejar el envío
             handleFormSubmission(userData);
+
+            form.reset(); // eliminar los datos colocados en el formulario
+
+            if(confirm('Se te redirigirá a Inicio')) {
+                window.location.href = '';//página de inicio de sesión
+            }
         }
     });
 
