@@ -6,20 +6,68 @@ body {
 /*Barra de navegación*/
 .custom-navbar {
     background-color: #caacde;
-    height: 80px;
+    height: auto; /*La altura se ajusta al tamaño de la barra*/
 }
 
+/*Botones de la barra*/
 .navbar-toggler {
+    height: 60px;
     border: none;
+    margin: auto 5px;
+}
+
+.navbar-toggler:hover {
+    box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+    border: none;
+
 }
 
 .navbar-toggler:focus {
     box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+    border: none;
     background-color: #f3dceb;
 }
 
+/*Tamaño de la iconos*/
 .btn-img {
     width: 50px;
 }
 
+.bar-search {
+    height: 50px;
+    border-radius: 20px;
+    box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+    border: none;
+    margin: auto;
+}
+
+.bar-search:focus {
+    box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+    border: none;
+}
+
+.btn-search {
+    height: 40px;
+}
+
+#btn-search {
+    height: 50px;
+    border: none;
+    margin: auto;
+    border-radius: 20px;
+}
+
+#btn-search:hover {
+    background-color: #9cac84;
+    box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+    border: none;
+}
+
+.offcanvas {
+    background-color: #caacde;
+}
+
+hr {
+    border: 2px solid black;
+}
 

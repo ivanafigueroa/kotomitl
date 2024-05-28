@@ -17,18 +17,18 @@
           <!--Alinear a la izquierda-->
           <div class="d-flex align-items-center">
             <!-- Botón de menú -->
-            <button class="navbar-toggler me-3" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+            <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
                 <!--<span class="navbar-toggler-icon"></span>-->
                 <img src="./Assents/menu.png" alt="" class="btn-img">
               </button>
               <!-- Botón de Carrito -->
-              <a href="#" class="btn">
+              <a href="#" class="btn navbar-toggler">
                 <img src="./Assents/carrito blanco.png" alt="Imagen carrito" class="btn-img">
               </a>
               <!--Botón de Inicio-->
-              <a href="#" class="btn">
+              <a href="#" class="btn navbar-toggler">
                 <img src="./Assents/Logo.png" alt="Imagen inicio" class="btn-img">
-                Inicio
+                INICIO
               </a>
           </div>  
           <!--Contenedor del menú-->
@@ -45,14 +45,23 @@
               <!--Listado del menú-->
               <ul class="navbar-nav justify-content-end flex-grow-1 pe-3 mt-3">
                 <li class="nav-item">
-                    <a class="nav-link" href="#">Inicia sesión o regístrate</a>
-                    <a class="nav-link" href="#">Catálogo</a>
-                    <a class="nav-link" href="#">Mis Pedidos</a>
-                    <a class="nav-link" href="#">
-                      <img src="./Assents/corazón.png" alt="" class="btn-img">
+                    <a class="nav-link navbar-toggler" href="#">
+                      <img src="./Assents/iconoLogIn negro.png" alt="" class="btn-img">
+                      Inicia sesión o regístrate
+                    </a>
+                    <a class="nav-link navbar-toggler" href="#">
+                      <img src="./Assents/catálogo.png" alt="" class="btn-img">
+                      Catálogo
+                    </a>
+                    <a class="nav-link navbar-toggler" href="#">
+                      <img src="./Assents/Me_gusta.png" alt="" class="btn-img">
                       Mis Favoritos
                     </a>
-                    <a class="nav-link" href="#">
+                    <a class="nav-link navbar-toggler" href="#">
+                      <img src="./Assents/Pedidos.png" alt="" class="btn-img">
+                      Mis Pedidos
+                    </a>
+                    <a class="nav-link navbar-toggler" href="#">
                       <img src="./Assents/contactanos negro.png" alt="" class="btn-img">
                       Contáctanos
                     </a>
@@ -65,14 +74,14 @@
             <!-- Abre un contenedor que alinea elementos a la derecha, utilizando clases de Bootstrap. -->
             <form class="d-flex" role="search">
               <!-- Abre un formulario para la funcionalidad de búsqueda con la clase "d-flex" para alinear elementos en línea. -->
-              <a href="#" class="btn mx-2">
+              <a href="#" class="btn mx-2 navbar-toggler">
                 <img src="./Assents/logo usuario blanco.png" alt="Imagen del botón" class="btn-img">
               </a>
               <!--Imagen de usuario. El orden aqui si es importante entoces que quede antes del imput -->
-              <input class="form-control me-2" type="search" placeholder="Buscar" aria-label="Search">
+              <input class="form-control bar-search mx-1" type="search" placeholder="Buscar" aria-label="Search">
               <!-- Crea un campo de entrada para ingresar texto de búsqueda con clases de Bootstrap para el estilo y atributos de accesibilidad. --> <!--Hay que pensar bien si lo queremos dejar porque implica mucho js. Lo podemos remplazar con el nombre de la app-->
-              <button class="btn btn-outline-success" type="submit">
-                <img class="btn-img" src="./Assents/search.png" alt="">
+              <button class="btn" id="btn-search"  type="submit">
+                <img class="btn-search" src="./Assents/search_blanco.png" alt="">
               </button>
               
               <!-- Crea un botón de búsqueda con estilos de Bootstrap. Para cambiar el estilo hay que ponerle id -->
