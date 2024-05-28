@@ -8,6 +8,7 @@ body {
 }
 
 form {
+<<<<<<< HEAD
     padding-top: 6%;
     padding-bottom: 6%;
     padding-right: 6%;
@@ -18,6 +19,10 @@ form {
     margin-bottom: 3%;
     background-color: #F3DCEB;
     box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
+=======
+    margin-top: 5vw;
+    margin-bottom:5vw;
+>>>>>>> 8983e05a982e76d23fb64366ef25e5db5f3ecb36
 }
 
 input {
@@ -57,4 +62,7 @@ input#check.form-check-input {
     font-size: large;
     font: bold;
     color: gray;
+}
+p {
+    font-size: small;
 }
