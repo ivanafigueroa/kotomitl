@@ -6,54 +6,102 @@
     <title>Registro de usuarias</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <link rel="stylesheet" href="./styles/registroUsuario.css">
+    <link rel="stylesheet" href="./styles/inicio_sesion.css">
+    <script src="https://kit.fontawesome.com/0ddf92d1f6.js" crossorigin="anonymous"></script>
+
 </head>
 <body>
-    <form>
-      <div class="container sm-12">
-          <div class="col sm-12">
-            <h1>Registro</h1>
-            <h6> Vendedora </h6>
-            <br>
-          </div>
-          <div class="col sm-12">
-            <label> Nombre(s) </label>
-            <input type="text" class="form-control"  aria-label="Username" id="nombre-usuario"> 
-            <label> Apellidos </label>
-            <input type="text" class="form-control"  aria-label="Username"> 
-            <br>
-            <label> Número de teléfono</label>
-            <input type="tel" name="phone" class="form-control" id="numero-telefono"> 
-            <br>
-            <label for="emailInput" class="form-label" >Email</label>
-            <input type="email" class="form-control" id="emailInput" aria-describedby="email">
-            <label for="emailInput" class="form-label" id="emailPriv">Tu información no se compartirá con nadie, consulta nuestro <a href="" id="links"> Aviso de privacidad </a></label>
-          </div>    
-            <br>
-          <div class="col sm-12">
-            <label for="passwordInput" class="form-label">Contraseña</label>
-            <input type="password" class="form-control" id="passwordInput">
-            <p>La contraseña debe contener al menos 1 letra mayúscula, 1 número y un carácter especial.</p>
-          </div>
-          <div class="col sm-12 form-check">
-          <input type="checkbox" class="form-check-input" id="check">
-          <label class="form-check-label" for="check" id="tyc">Acepto 
-          <a href="" id="links">términos y condiciones</a></label>
-          </div>
-            <br>
-          <div class="col sm-12">
-            <button type="submit" class="btn btn-primary" >¡Regístrame!</button>
-          </div>
+  <form id="register-user">
+    <div class="container sm-12">
+        <div class="col sm-12">
+          <h1>Registro</h1>
+          <h6> Vendedora </h6>
           <br>
-          <div class="col sm-12">
-            <h6>¿Ya tienes una cuenta con nosotras?</h6>
-            <a href="" class="buttonClass" id="sesionLink">Inicia sesión</a>
-          </div>
+        </div>
+        <div class="col sm-12">
+          <label> Nombre(s) </label>
+          <input type="text" class="form-control"  aria-label="Username" id="nombre-usuario"> 
+          <label> Apellidos </label>
+          <input type="text" class="form-control"  aria-label="Username"> 
+          <br>
+          <label> Número de teléfono</label>
+          <input type="tel" name="phone" class="form-control" id="numero-telefono"> 
+          <br>
+          <label for="emailInput" class="form-label" >Email</label>
+          <input type="email" class="form-control" id="emailInput" aria-describedby="email">
+          <label for="emailInput" class="form-label" id="emailPriv">Tu información no se compartirá con nadie, consulta nuestro <a href="" id="links"> Aviso de privacidad </a></label>
+        </div>    
+          <br>
+        <div class="col sm-12">
+          <label for="passwordInput" class="form-label">Contraseña</label>
+          <input type="password" class="form-control" id="passwordInput">
+          <p>La contraseña debe contener al menos 1 letra mayúscula, 1 número y un carácter especial.</p>
+        </div>
+        <div class="col sm-12 form-check">
+          <input type="checkbox" class="form-check-input" id="check"> 
+        <a href="" id="links">términos y condiciones</a></label>
+        </div>
+          <br>
+        <div class="col sm-12">
+          <button type="submit" class="btn" >¡Regístrame!</button>
+        </div>
+        <br>
+        <div class="col sm-12">
+          <h6>¿Ya tienes una cuenta con nosotras?</h6>
+          <a href="" class="buttonClass" id="sesionLink" data-bs-toggle="modal" data-bs-target="#exampleModal">Inicia sesión</a>
+        </div>
+    </div>
+  </form>
+  <!--Ventana de inicio-->
+  <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="btn-close" id="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <!--Formulario-->
+          <section>
+            <div class="contenedor">
+              <div class="formulario">
+                <!--<form action="#">-->
+                  <h2>Iniciar Sesión</h2>
+                  <div class="input-contenedor">
+                    <i class="fa-solid fa-envelope"></i>
+                    <input type="email" required>
+                    <label for="#">Email</label>
+                  </div>
+  
+                  <div class="input-contenedor">
+                    <i class="fa-solid fa-lock"></i>
+                    <input type="password" required>
+                    <label for="#">Contraseña</label>
+                  </div>
+  
+                  <div class="olvidar">
+                    <label for="#">
+                      <input type="checkbox" class="form-check-input" id="check">Recordar
+                      <br>
+                      <a href="#">Olvidé mi contraseña</a>
+                    </label>
+                  </div>
+                  <br>
+                <!--</form>-->
+                <button>Acceder</button>
+                <div class="registrar">
+                  <p>No tengo cuenta<a href="#register-user">   Crear una</a></p>
+                </div>
+              </div>
+            </div>
+          </section>
+        </div>
       </div>
-    </form>
+    </div>
+  </div>
 
-    <script src="./registro.js"></script>
-    <script src="./crearJSON.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
-    <script></script>
+  <script src="./registro.js"></script>
+  <script src="./crearJSON.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+  <script></script>
 </body>
 </html>

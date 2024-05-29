@@ -8,7 +8,7 @@ body {
 }
 
 form {
-<<<<<<< HEAD
+
     padding-top: 6%;
     padding-bottom: 6%;
     padding-right: 6%;
@@ -19,14 +19,12 @@ form {
     margin-bottom: 3%;
     background-color: #F3DCEB;
     box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
-=======
     margin-top: 5vw;
     margin-bottom:5vw;
->>>>>>> 8983e05a982e76d23fb64366ef25e5db5f3ecb36
 }
 
 input {
-    border: dotted 2px grey;
+    border: dashed 2px grey;
 }
 
 #tyc {
@@ -38,9 +36,11 @@ input {
     font-size: small;
 }
 
-button {
+.btn {
     background-color: #CAACDE !important;
     box-shadow: rgba(0, 0, 0, 0.25) 0px 0.0625em 0.0625em, rgba(0, 0, 0, 0.25) 0px 0.125em 0.5em, rgba(255, 255, 255, 0.1) 0px 0px 0px 1px inset;
+    width: 150px;
+    color: whitesmoke !important; 
 }
 a#links {
     color: grey;
@@ -52,10 +52,11 @@ a#links {
 }
 
 input.form-control {
-    border: dotted .3vw #CAACDE;
+    border: dashed .15vw #CAACDE;
 }
 input#check.form-check-input {
     background-color: #CAACDE;
+    border: none;
 }
 
 #sesionLink {
