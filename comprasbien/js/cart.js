@@ -26,16 +26,9 @@ function crearTarjetasProductosInicio(){
     <div>
     <button>-</button>
     <span class="cantidad">${producto.cantidad}</span>
-    <button>+</button>
     </div>
     `;
     contenedorTarjetas.appendChild(nuevaPrenda); 
-    nuevaPrenda.getElementsByTagName("button")[1].addEventListener("click", (e) => {
-        agregarAlCarrito(producto);
-        const cuentaElement = e.target.parentElement.getElementsByTagName("span")[0];
-        cuentaElement.innerText = agregarAlCarrito(producto);
-        actualizarTotales();
-    });
 
     nuevaPrenda.getElementsByTagName("button")[0].addEventListener("click", (e) => {
         restarAlCarrito(producto);

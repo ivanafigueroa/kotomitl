@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="styles.css">
+	<link rel="stylesheet" href="index.css"> <!--aquí están los estilos de las tarjetas del html-->
+	<script src="js/prendas.js"></script> <!--referencia a nuestra base de datos o backend, va primero para que se carguen los productos-->
+	<script src="./js/index.js" defer></script>
+	<script src="./js/cartService.js" defer></script>
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+	<title>Document</title>
+</head>
+<body>
+	<header>
+		<nav>
+			<a href="./index.html"><img src="./Assets/logo.png" id="logo" alt="logo"></a>
+			<div>
+				<a href="./cart.html" id="cart"><img src="./Assets/carrito.png" alt="Carrito de compras"><span id="cuenta-carrito">0</span></a>
+			</div>
+		</nav>
+	</header>
+	<main>
+		<section id="productos-container"></section>
+	</main>
+	
+	
+</body>
+</html>

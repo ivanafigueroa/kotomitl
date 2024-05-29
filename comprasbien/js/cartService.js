@@ -1,10 +1,6 @@
-//Aquí vamos a trabajar toda la funcionalidad que tenga que ver con el carrito.
-//No lo que pasa si yo presiono un botón u otro pero va a a estar ligada a las dos páginas y va a mover, ageegar o sacar un producto, reiniciar carrito, etc.
-
-
-// se crea la función agregar al carrito que reciba un producto
+//Aquí vamos a trabajar la funcionalidad del carrito
 function agregarAlCarrito(producto){
-    const memoria = JSON.parse(localStorage.getItem("prendas"));     //primero pido que cheque si ya hay producto en la memoria 
+    const memoria = JSON.parse(localStorage.getItem("prendas"));     //primero pido que cheque si ya hay producto en la mempria 
     console.log(memoria);
     let cuenta = 0;
     if(!memoria) {
