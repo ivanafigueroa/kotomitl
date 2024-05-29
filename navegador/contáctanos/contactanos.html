@@ -31,38 +31,45 @@
   </div>
   <br>
   <!--Formulario-->
-  <form>
+  <form id="form" class="was-validated">
     <div class="row">
       <div class="col-md-6">
         <div class="mb-3">
           <label for="inputName" class="form-label">Nombre</label>
-          <input type="text" class="form-control" id="name">
+          <input type="text" class="form-control" name="name" required>
         </div>
       </div>
       <div class="col-md-6">
         <div class="mb-3">
           <label for="inputPhone" class="form-label">Número telefónico</label>
-          <input type="tel" class="form-control" id="phone">
+          <input type="tel" class="form-control" name="phone" required>
         </div>
       </div>
     </div>
     <div class="mb-3">
       <label for="inputEmail" class="form-label">Correo electrónico</label>
-      <input type="email" class="form-control" id="email">
+      <input type="email" class="form-control" name="email" required>
     </div>
     <div class="mb-3">
       <label for="inputContact" class="form-label">¿Cómo podemos ayudarte?</label>
-      <textarea class="form-control" id="message" rows="3"></textarea>
+      <textarea class="form-control" name="message" rows="3" required></textarea>
     </div>
     <br>
     <!--botón-->
     <div class="col-12 text-center">
-      <button type="submit" class="btn btn-custom-purple">Enviar</button>
+      <input type="submit" id="button" value="Enviar" class="btn btn-custom-purple">
     </div>
   </form>
-    
+  <!--script para envío de correo por medio de emailJS-->
+  <script type="text/javascript"
+  src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+  <script type="text/javascript">
+    emailjs.init('Bf9W-Cfv9eDb9Sohg')
+  </script>
+  <!--Bootstrap-->  
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>   
-    
+  
+  <script src="./contactanos.js"></script>
 </body>
 </html>
 
