@@ -74,8 +74,8 @@ function validateForm(event) {
 
     function validateEntrega() {
         const recibe = document.getElementById('recibe').value;
-        const linea = document.getElementById("linea").value;
-        const metro = document.getElementById("metro").value;
+        const linea = document.getElementById("del").value;
+        const metro = document.getElementById("direc").value;
         const ref = document.getElementById("ref").value;
 
         if(recibe.trim() == '' || linea.trim() == '' || metro.trim() == '' || ref.trim() == '') {
@@ -92,8 +92,8 @@ function saveFormData() {
         month: document.getElementById("month").value,
         year: document.getElementById("year").value,
         recibe: document.getElementById("recibe").value,
-        linea: document.getElementById("linea").value,
-        metro: document.getElementById("metro").value,
+        del: document.getElementById("del").value,
+        metro: document.getElementById("direc").value,
         ref: document.getElementById("ref").value
         //se omite CVV/CVC por seguridad
     };
