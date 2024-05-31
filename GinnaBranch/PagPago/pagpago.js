@@ -11,7 +11,7 @@ function validateForm(event) {
     if(!validateYear()) return false;
     if(!validateCvc()) return false;
 
-    if(!validateEntrega()) return false;
+    // if(!validateEntrega()) return false;
     //guarda los datos en local storage
     if(document.getElementById("saveData").checked) {
         saveFormData();
@@ -72,29 +72,30 @@ function validateForm(event) {
         return true;
     }
 
-    function validateEntrega() {
-        const recibe = document.getElementById('recibe').value;
-        const linea = document.getElementById("del").value;
-        const metro = document.getElementById("direc").value;
-        const ref = document.getElementById("ref").value;
+    // function validateEntrega() {
+    //     const recibe = document.getElementById('recibe').value;
+    //     const linea = document.getElementById("del").value;
+    //     const metro = document.getElementById("direc").value;
+    //     const ref = document.getElementById("ref").value;
 
-        if(recibe.trim() == '' || linea.trim() == '' || metro.trim() == '' || ref.trim() == '') {
-            alert("Todos campos de Entrega son necesarios.");
-            return false;
-        }
-        return true;
-    }
+    //     if(recibe.trim() == '' || linea.trim() == '' || metro.trim() == '' || ref.trim() == '') {
+    //         alert("Todos campos de Entrega son necesarios.");
+    //         return false;
+    //     }
+    //     return true;
+    // }
+
 //guardar la data del usuario
 function saveFormData() {
     const formData = {
         titular: document.getElementById("titular").value,
         card: document.getElementById("card").value,
         month: document.getElementById("month").value,
-        year: document.getElementById("year").value,
-        recibe: document.getElementById("recibe").value,
-        del: document.getElementById("del").value,
-        metro: document.getElementById("direc").value,
-        ref: document.getElementById("ref").value
+        year: document.getElementById("year").value
+        // recibe: document.getElementById("recibe").value,
+        // del: document.getElementById("del").value,
+        // metro: document.getElementById("direc").value,
+        // ref: document.getElementById("ref").value
         //se omite CVV/CVC por seguridad
     };
 
