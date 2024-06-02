@@ -22,11 +22,11 @@
 
                 <a class="list-group-item" id="list-carrito" data-bs-toggle="list" href="#list-change-carrito"> <img src="./Assets/carritoblack.png" alt=""> CARRITO</a>
 
-                <a class="list-group-item" id="list-favs" data-bs-toggle="list" href="#list-change-favs"> <img src="./Assets/noteblack.png" alt="">FAVORITOS</a>
+                <a class="list-group-item" id="list-favs" data-bs-toggle="list" href="#list-change-favs"> <img src="./Assets/noteblack.png" alt="">PEDIDOS</a>
 
                 <a class="list-group-item" id="list-change-password-list" data-bs-toggle="list" href="#list-change-password"><img src="./Assets/pencilblack.png" alt="">CONTRASEÑA</a>
 
-                <a class="list-group-item" id="list-info-list" data-bs-toggle="list" href="#list-info"><img src="./Assets/homeblack.png" alt="">DIRECCIONES</a>
+                <a class="list-group-item" id="list-info-list" data-bs-toggle="list" href="#list-info"><img src="./Assets/homeblack.png" alt="">CERRAR SESION</a>
             </div>
         </div>
         <!--Derecha-->
@@ -53,7 +53,15 @@
                           <div class="form-group">
                             <label class="form-label">Telefono</label>
                             <input type="text" class="form-control mb-1">
-                        </div>
+                          </div>
+                          <div class="col-md-12">
+                            <label class="form-label">Dirección</label>
+                            <input type="text" class="form-control"required>
+                          </div>
+                            <div class="col-md-12">
+                              <label class="form-label">Referencias</label>
+                              <input type="text" class="form-control"required>
+                            </div>
                           <div class="form-group">
                               <label class="form-label">E-mail</label>
                               <input type="email" class="form-control mb-1" placeholder="mail@mail.com">
@@ -71,6 +79,8 @@
                 <div class="tab-pane fade" id="list-change-carrito">
                   <img src="./Assets/Gato.png" id="gato">
                   <!--Aqui adentro va referenciado el carrito-->
+
+                  
                 </div>
                 <div class="tab-pane fade" id="list-change-favs">
                   <img src="./Assets/Gato.png" id="gato">
@@ -103,40 +113,6 @@
                         </form>
                     </div>
                 </div>
-                <!-- Direcciones-->
-                <div class="tab-pane fade" id="list-info">
-                    <div class="card-body pb-2">
-                      <br>
-                      <h3 class="titulos">Direcciones</h3>
-                      <br>
-                      <form id="miFormulario">
-                        <div class="col-md-12">
-                          <label class="form-label">Dirección</label>
-                          <input type="text" class="form-control"required>
-                        </div>
-                          <div class="col-md-12">
-                            <label for="validationDefault04" class="form-label">Estación</label>
-                            <select class="form-select" id="validationDefault04" required>
-                              <option selected disabled value="">Elige...</option>
-                              <option>Chabacano</option>
-                              <option>Buena Vista</option>
-                              <option>Universidad</option>
-                              <option>Pantitlan</option>
-                              <option>El Rosario</option>
-                              <option>Villa de Aragón</option>
-                            </select>
-                          </div>
-                          <div class="col-md-12">
-                            <label class="form-label">Referencias</label>
-                            <input type="text" class="form-control"required>
-                          </div>
-                          <br>
-                          <div class="col-12">
-                            <button class="btn btn-primary" type="submit">Guardar</button>
-                          </div>
-                      </form>
-                    </div>
-               </div>
         </div>
     </div>
 </div>
