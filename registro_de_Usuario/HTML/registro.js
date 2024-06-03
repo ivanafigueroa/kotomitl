@@ -9,6 +9,15 @@ document.addEventListener('DOMContentLoaded', () => {
 
     form.addEventListener('submit', (e) => {
         e.preventDefault();
+
+        
+        const delegacionInput = document.getElementById('delegacion');
+        const direccionInput = document.getElementById('direccion');
+        const referenciasInput = document.getElementById('referencias');
+
+        const delegacion = delegacionInput.value.trim();
+        const direccion = direccionInput.value.trim();
+        const referencias = referenciasInput.value.trim();
         
         let valid = true;
 
@@ -40,6 +49,21 @@ document.addEventListener('DOMContentLoaded', () => {
 
         if (!checkInput.checked) {
             showAlert('Debes aceptar los términos y condiciones.');
+            valid = false;
+        }
+
+        if(!delegacionInput.value.trim()) {
+            showAlert('El campo de Delegación o Alcadía es obligatorio.');
+            valid = false;
+        }
+
+        if(!direccionInput.value.trim()) {
+            showAlert('El campo de Dirección es obligatorio.');
+            valid = false;
+        }
+
+        if(!referenciasInput.value.trim()) {
+            showAlert('El campo de Referencias es obligatorio.');
             valid = false;
         }
 
@@ -84,6 +108,9 @@ document.addEventListener('DOMContentLoaded', () => {
                 password: passwordInput.value.trim(),
                 telefono: telefonoInput.value.trim(),
                 email: emailInput.value.trim(),
+                delegacion: delegacion,
+                direccion: direccion,
+                referencias: referencias
             };
 
             // Llamar a la función para crear el JSON y manejar el envío

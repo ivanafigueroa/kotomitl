@@ -13,44 +13,55 @@
 <body>
   <form id="register-user">
     <div class="container sm-12">
-        <div class="col sm-12">
-          <h1>Registro</h1>
-          <h6> Vendedora </h6>
-          <br>
-        </div>
-        <div class="col sm-12">
-          <label> Nombre(s) </label>
-          <input type="text" class="form-control"  aria-label="Username" id="nombre-usuario"> 
-          <label> Apellidos </label>
-          <input type="text" class="form-control"  aria-label="Username"> 
-          <br>
-          <label> Número de teléfono</label>
-          <input type="tel" name="phone" class="form-control" id="numero-telefono"> 
-          <br>
-          <label for="emailInput" class="form-label" >Email</label>
-          <input type="email" class="form-control" id="emailInput" aria-describedby="email">
-          <label for="emailInput" class="form-label" id="emailPriv">Tu información no se compartirá con nadie, consulta nuestro <a href="" id="links"> Aviso de privacidad </a></label>
-        </div>    
-          <br>
-        <div class="col sm-12">
-          <label for="passwordInput" class="form-label">Contraseña</label>
-          <input type="password" class="form-control" id="passwordInput">
-          <p>La contraseña debe contener al menos 1 letra mayúscula, 1 número y un carácter especial.</p>
-        </div>
-        <div class="col sm-12 form-check">
-          <input type="checkbox" class="form-check-input" id="check"> 
-        <a href="" id="links">términos y condiciones</a></label>
-        </div>
-          <br>
-        <div class="col sm-12">
-          <button type="submit" class="btn" >¡Regístrame!</button>
-        </div>
+      <div class="col sm-12">
+        <h1>Registro</h1>
         <br>
-        <div class="col sm-12">
-          <h6>¿Ya tienes una cuenta con nosotras?</h6>
-          <a href="" class="buttonClass" id="sesionLink" data-bs-toggle="modal" data-bs-target="#exampleModal">Inicia sesión</a>
-        </div>
-    </div>
+      </div>
+      <div class="col sm-12">
+        <label> Nombre(s) </label>
+        <input type="text" class="form-control"  aria-label="Username" id="nombre-usuario"> 
+        <label> Apellidos </label>
+        <input type="text" class="form-control"  aria-label="Username"> 
+        <br>
+        <label> Número de teléfono</label>
+        <input type="tel" name="phone" class="form-control" id="numero-telefono" placeholder=> 
+        <br>
+        <label for="emailInput" class="form-label" >Email</label>
+        <input type="email" class="form-control" id="emailInput" aria-describedby="email">
+        <label for="emailInput" class="form-label" id="emailPriv">Tu información no se compartirá con nadie, consulta nuestro <a href="" id="links"> Aviso de privacidad </a></label>
+      </div>    
+        <br>
+      <div class="col sm-12">
+        <label for="passwordInput" class="form-label">Contraseña</label>
+        <input type="password" class="form-control" id="passwordInput">
+        <p>La contraseña debe contener al menos 1 letra mayúscula, 1 número y un carácter especial.</p>
+      </div>
+      <h4>Dirección</h4>
+      <div class="col sm-12">
+        <label for="delegacion" class="form-label">Delegación o Alcaldía</label>
+        <input type="text" class="form-control" id="delegacion" placeholder="Delegación o Alcaldía">
+        <br>
+        <label for="direccion" class="form-label">Dirección</label>
+        <input type="text" class="form-control" id="direccion" placeholder="Calle, número, c.p.">
+        <br>
+        <label for="referencias" class="form-label">Referencias</label>
+        <input type="text" class="form-control" id="referencias" placeholder="Referencias de tu ubicación">
+      </div>
+      <br>
+      <div class="col sm-12 form-check">
+        <input type="checkbox" class="form-check-input" id="check"> 
+      <a href="" id="links">términos y condiciones</a></label>
+      </div>
+        <br>
+      <div class="col sm-12">
+        <button type="submit" class="btn" >¡Regístrame!</button>
+      </div>
+      <br>
+      <div class="col sm-12">
+        <h6>¿Ya tienes una cuenta con nosotras?</h6>
+        <a href="" class="buttonClass" id="sesionLink" data-bs-toggle="modal" data-bs-target="#exampleModal">Inicia sesión</a>
+      </div>
+  </div>
   </form>
   <!--Ventana de inicio-->
   <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
