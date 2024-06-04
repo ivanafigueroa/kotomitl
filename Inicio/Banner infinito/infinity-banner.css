@@ -1,0 +1,62 @@
+/*Colors*/
+:root {
+    --color-fondodos: #F3DCEB;
+    --color-fondo: #E4F3DC;
+    --color-botones: #CCAFD4;
+    --color-piespag: #CAACDE;
+    --color-resaltar: #9CAC84;
+    --color-hoover: #ECF1F3;
+}
+
+
+.slider {
+    background-color: var(--color-fondo);
+    text-decoration: none;
+    box-sizing: border-box;
+    position: fixed;
+    display: flex;  
+    font-family: 'Poppins';
+    top: 15vh;
+    transform: translate(-55%, -70%);
+    background-color: var(--color-botones);
+}
+
+.slide-track {
+    display: flex;
+    white-space: nowrap;
+    overflow: hidden;
+    
+    box-sizing: border-box;
+   
+}
+
+.slide-track .banner {
+    display: flex;
+    font-size: 40px;
+    white-space: nowrap;
+    list-style: none;
+    height: 30px;
+    margin-top: 10px;
+    animation: scroll 300s linear infinite;
+}
+
+.slide-track .banner .text-content::after {
+    content: '  ';
+    margin: 0 5px;
+}
+
+
+.slide-track .banner .text-content .text-into  {
+    text-decoration: none;
+    color: #FFFFFF;
+
+}
+
+@keyframes scroll {
+    0% {
+        transform: translateX(55%);
+    }
+    100% {
+        transform: translateX(-100%);
+    }
+}
