@@ -14,11 +14,13 @@ body {
     height: 60px;
     border: none;
     margin: auto 5px;
+    color: whitesmoke;
 }
 
 .navbar-toggler:hover {
     box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
     border: none;
+    color: whitesmoke;
 
 }
 
@@ -26,6 +28,7 @@ body {
     box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
     border: none;
     background-color: #f3dceb;
+    color: #000;
 }
 
 /*Tamaño de la iconos*/
