@@ -1,0 +1,233 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+/*RESET*/
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Poppins", sans-serif;
+}
+
+nav {
+    background-color: #CAACDE;
+    height: auto;
+    padding: 10px 20px;
+    margin: 0;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.left, .right {
+    display: inline-flex;
+    width: 50%;
+}
+
+.right {
+    justify-content: right;
+}
+
+.btn-img {
+    width: 50px;
+    margin: 2px;
+}
+
+#btn-inicio {
+    font-size: larger;
+    margin-left: 0;
+}
+
+a {
+    color: white;
+    font-size: large;
+    text-decoration: none;
+    padding: 5px 10px;
+    margin-left: 10px;
+    margin-right: 10px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    height: 60px;
+    transition: 0.4s;
+}
+
+a:hover {
+    background-color: #F3DCEB;
+    transition: 0.4s;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 0.0625em 0.0625em, rgba(0, 0, 0, 0.25) 0px 0.125em 0.5em, rgba(255, 255, 255, 0.1) 0px 0px 0px 1px inset;
+    color: black;
+}
+
+a:focus {
+    color: black;
+}
+
+/*Barra de busqueda*/
+.search {
+    border: none;
+    border-radius: 25px;
+    height: 40px;
+    margin: 5px;
+    padding: 10px;
+    font-size: medium;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 0.0625em 0.0625em, rgba(0, 0, 0, 0.25) 0px 0.125em 0.5em, rgba(255, 255, 255, 0.1) 0px 0px 0px 1px inset;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.search:focus {
+    outline: none;
+}
+
+#search-btn {
+    background-color: transparent;
+    height: 60px;
+    box-shadow: none;
+}
+
+#search-btn:hover {
+    background-color: #ecf1f3;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 0.0625em 0.0625em, rgba(0, 0, 0, 0.25) 0px 0.125em 0.5em, rgba(255, 255, 255, 0.1) 0px 0px 0px 1px inset;
+}
+
+.mostrar-menu {
+    font-size: 90px;
+    border-radius: 10px;
+    padding: 5px;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.mostrar-menu:hover {
+    background-color: #F3DCEB;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 0.0625em 0.0625em, rgba(0, 0, 0, 0.25) 0px 0.125em 0.5em, rgba(255, 255, 255, 0.1) 0px 0px 0px 1px inset;
+}
+
+#check {
+    display: none;
+}
+
+.esconder-menu {
+    font-size: 30px;
+    color: white;
+    cursor: pointer;
+    display: none;
+    position: absolute;
+    top: 10px;
+    left: 300px;
+}
+
+.menu {
+    display: block;
+    width: 300px;
+    height: 100vh;
+    background-color: #CAACDE;
+    position: fixed;
+    top: 0;
+    left: -100%;
+    transition: left 0.3s ease;
+    padding: 20px;
+    box-shadow: 2px 0 5px rgba(0,0,0,0.5);
+}
+
+.menu h3 {
+    color: black;
+    margin-top: 30px;
+    margin-bottom: 10px;
+}
+
+hr {
+    border: 1px solid black;
+}
+
+.menu .btn {
+    margin: 10px;
+}
+
+#check:checked ~ .menu {
+    left: 0;
+}
+
+#check:checked ~ .esconder-menu {
+    display: block;
+}
+
+/* Responsividad */
+
+/* Tablets en modo retrato y móviles */
+@media (max-width: 768px) {
+    nav {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .left, .right {
+        width: 100%;
+        justify-content: space-between;
+    }
+
+    .right {
+        margin-top: 10px;
+    }
+
+    a {
+        font-size: medium;
+        padding: 5px;
+        height: auto;
+    }
+
+    .search {
+        width: 100%;
+    }
+}
+
+/* Móviles */
+@media (max-width: 480px) {
+    .mostrar-menu {
+        font-size: 60px;
+    }
+
+    .esconder-menu {
+        left: 250px;
+    }
+
+    .menu {
+        width: 250px;
+    }
+}
+
+/* Pantallas pequeñas (móviles en modo paisaje y tablets en modo retrato) */
+@media (max-width: 320px) {
+    .mostrar-menu {
+        font-size: 40px;
+    }
+
+    .esconder-menu {
+        left: 200px;
+    }
+
+    .menu {
+        width: 200px;
+    }
+
+    nav {
+        padding: 10px;
+    }
+
+    a {
+        font-size: small;
+        padding: 5px;
+        margin: 5px;
+    }
+
+    .search {
+        padding: 5px;
+        font-size: small;
+    }
+}
