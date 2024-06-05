@@ -1,0 +1,45 @@
+body {
+    font-family: "Poppins";
+    background-color: #e3f3dc;
+    font-size: 20px;
+}
+/*Barra de navegación*/
+.custom-navbar {
+    background-color: #caacde;
+    height: 80px;
+    
+}
+
+.navbar-toggler {
+    border: none;
+    
+}
+
+.navbar-toggler:focus {
+    box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+    background-color: #f3dceb;
+    
+}
+
+.btn-img {
+   height:60px;
+}
+/**fondo de menu despegable*/
+.offcanvas-header{
+    background-color: #CAACDE;
+}
+/**fondo de menu despegable*/
+.offcanvas{
+    background-color: #CAACDE;
+}
+
+/*letras identificate o registrate*/
+.text-black {
+    color: black;
+}
+/*barra de navegacion*/
+.form-control{
+    border-radius: 87px 87px 87px 87px;
+    padding: 15px 100px;
+}
+
