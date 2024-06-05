@@ -93,24 +93,25 @@
                       <br>
                       <h3 class="titulos">Contraseña</h3>
                       <br>
-                        <form id="miFormulario">
+                        <form id="updatePasswordForm">
                           <div class="form-group">
                             <label class="form-label">Contraseña Actual</label>
-                            <input type="password" class="form-control">
+                            <input type="password" class="form-control" id="currentPassword">
                         </div>
                         <div class="form-group">
                             <label class="form-label">Nueva Contraseña</label>
-                            <input type="password" class="form-control">
+                            <input type="password" class="form-control" id="newPassword">
                         </div>
                         <div class="form-group">
                             <label class="form-label">Verifica tu contraseña</label>
-                            <input type="password" class="form-control">
+                            <input type="password" class="form-control" id="confirmNewPassword">
                         </div>
                         <br>
                         <div class="col-12">
-                          <button class="btn btn-primary" type="submit">Guardar</button>
+                          <button class="btn btn-primary" type="submit" id="updatePassword">Guardar</button>
                         </div>
                         </form>
+                        <div id="passwordError"></div>
                     </div>
                 </div>
         </div>
