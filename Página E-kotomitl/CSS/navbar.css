@@ -32,11 +32,11 @@ nav {
 }
 
 #btn-inicio {
-    font-size: larger;
+    font-size: large;
     margin-left: 0;
 }
 
-.btn {
+.btn-nav {
     color: white;
     font-size: large;
     text-decoration: none;
@@ -51,7 +51,7 @@ nav {
     transition: 0.4s;
 }
 
-.btn:hover {
+.btn-nav:hover {
     background-color: #a894b3;
     transition: 0.4s;
     box-shadow: rgba(0, 0, 0, 0.25) 0px 0.0625em 0.0625em, rgba(0, 0, 0, 0.25) 0px 0.125em 0.5em, rgba(255, 255, 255, 0.1) 0px 0px 0px 1px inset;
@@ -131,6 +131,7 @@ nav {
     transition: left 0.3s ease;
     padding: 20px;
     box-shadow: 2px 0 5px rgba(0,0,0,0.5);
+    z-index: 1001;
     
 }
 
@@ -138,6 +139,7 @@ nav {
     color: white;
     margin-top: 30px;
     margin-bottom: 10px;
+    font-size: medium;
 }
 
 hr{
@@ -145,7 +147,7 @@ hr{
 
 }
 
-.menu .btn {
+.menu .btn-nav {
     margin: 10px;
 }
 
@@ -155,6 +157,7 @@ hr{
 
 #check:checked ~ .esconder-menu {
     display: block; /* Mostrar el botón para cerrar el menú */
+    z-index: 1001;
 }
 
 /*Responsividad*/
