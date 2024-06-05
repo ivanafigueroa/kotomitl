@@ -9,7 +9,8 @@
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
         <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="./Carrusel.css">
-        <link rel="stylesheet" href="infinity-banner.css">
+        <link rel="stylesheet" href="./BannerInfinito.css">
+        <link rel="stylesheet" href="./Banner.css">
 </head>
 <body>
   <!--Banner infinito-->
@@ -49,10 +50,10 @@
                 <li class="text-content">
                   <a href="#" class="text-into"> | ❤︎ |  Cada prenda cuenta una historia de sostenibilidad y solidaridad entre mujeres </a>
                 </li>
-                <li>
+                <li class="text-content">
                   <a href="#" class="text-into"> | ❤︎ | Descubre la magia de vestir con propósito</a>
                 </li>
-                <li class="text-content">
+                  <li class="text-content">
                   <a href="#" class="text-into"> | ❤︎ |  Nuestra comunidad demuestra que la moda sostenible es bella, poderosa y accesible para todas </a>
                 </li>
                 <li class="text-content">
@@ -65,16 +66,27 @@
     </div>
 </div>
 
+<!--Banner-->
+<div class="container">
+  <div class="banner-first"> 
+      <div class="banner-textaline"> 
+          <h2 class="banner-text">¡Moda sostenible a tu puerta!</h2>
+          <h1 class="banner-title">E - Kotomitl</h1>
+         <a href="https://ecuador.inaturalist.org/taxa/35280-Cyclura-rileyi"><button id="btn">¿Quiénes somos?</button> </a>
+      </div>
+  </div>
+
 <!--Carrusel de imagenes-->
+<div class="container-carousel">
   <div class="title">
-    <h2>Actualiza tu closet</h2>
+    <h2 class="title-carousel">Actualiza tu closet</h2>
   </div>
     <div class="carousel">
         <i id="left" class="fa-solid fa-angle-left"></i>
         <ul class="box">
           <li class="card">
             <div class="slide-img">
-              <img src="./Assets/productos/jeans1.jpeg" alt="img" draggable="false">
+              <img src="./Assets/jeans1.jpeg" alt="img" draggable="false">
                 <div class="overlay">
                  <a href="#" class="buy-btn">Compra Ahora</a>
                 </div>
@@ -86,7 +98,7 @@
 
           <li class="card">
             <div class="slide-img">
-              <img src="/Assets/productos/blusa1.jpg" alt="img" draggable="false">
+              <img src="/Assets/blusa1.jpg" alt="img" draggable="false">
                 <div class="overlay">
                  <a href="#" class="buy-btn">Compra Ahora</a>
                 </div>
@@ -98,7 +110,7 @@
 
           <li class="card">
             <div class="slide-img">
-              <img src="./Assets/productos/short1.jpeg" alt="img" draggable="false">
+              <img src="./Assets/short1.jpeg" alt="img" draggable="false">
                 <div class="overlay">
                   <a href="#" class="buy-btn">Compra Ahora</a>
                 </div>
@@ -110,7 +122,7 @@
 
           <li class="card">
             <div class="slide-img">
-              <img src="./Assets/productos/chamarra1.jpg" alt="img" draggable="false">
+              <img src="./Assets/chamarra1.jpg" alt="img" draggable="false">
                 <div class="overlay">
                   <a href="#" class="buy-btn">Compra Ahora</a>
                 </div>
@@ -122,7 +134,7 @@
 
           <li class="card">
             <div class="slide-img">
-              <img src="./Assets/productos/pijama2.jpeg" alt="img" draggable="false">
+              <img src="./Assets/pijama2.jpeg" alt="img" draggable="false">
                 <div class="overlay">
                   <a href="#" class="buy-btn">Compra Ahora</a>
                 </div>
@@ -134,7 +146,7 @@
 
           <li class="card">
             <div class="slide-img">
-              <img src="./Assets/productos/blusa2.jpg" alt="img" draggable="false">
+              <img src="./Assets/blusa2.jpg" alt="img" draggable="false">
                 <div class="overlay">
                   <a href="#" class="buy-btn">Compra Ahora</a>
                 </div>
@@ -146,9 +158,8 @@
         </ul>
         <i id="right" class="fa-solid fa-angle-right"></i>
   </div>
+</div>
         
 <script src="./Carrusel.js"></script>
-<script src="./compras/js/prendas.js"></script>
-<script src="./compras/index.html"></script>
 </body>
 </html>

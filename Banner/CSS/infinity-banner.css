@@ -13,18 +13,19 @@
     background-color: var(--color-fondo);
     text-decoration: none;
     box-sizing: border-box;
-    position: fixed;
+    position: relative;
     display: flex;  
     font-family: 'Poppins';
-    top: 15vh;
-    transform: translate(-55%, -70%);
+    top: 40vh;
+    transform: translate(-100%, -70%);
     background-color: var(--color-botones);
+
 }
 
 .slide-track {
     display: flex;
     white-space: nowrap;
-    overflow: hidden;
+   /* overflow: hidden;*/
     
     box-sizing: border-box;
    
@@ -32,11 +33,11 @@
 
 .slide-track .banner {
     display: flex;
-    font-size: 40px;
+    font-size: 20px; 
     white-space: nowrap;
     list-style: none;
     height: 30px;
-    margin-top: 10px;
+    margin-top: 50px;
     animation: scroll 300s linear infinite;
 }
 

@@ -16,93 +16,43 @@
   text-decoration: none;
 }
 
-/*Estilos de banner infinito*/
-.slider {
-  background-color: var(--color-fondo);
-  box-sizing: border-box;
-  position: fixed;
-  max-width: max-content;
-  min-width: max-content;
-  display: flex;  
-  font-family: 'Poppins';
-  top: 15vh;
-  transform: translate(-55%, -70%);
-  background-color: var(--color-botones);
-}
-
-.slide-track {
-  display: flex;
-  white-space: nowrap;
-  overflow: hidden;
-  box-sizing: border-box;
- 
-}
-
-.slide-track .banner {
-  display: flex;
-  font-size: 40px;
-  white-space: nowrap;
-  list-style: none;
-  height: 65px;
-  margin-top: 10px;
-  animation: scroll 300s linear infinite;
-}
-
-.slide-track .banner .text-content::after {
-  content: '  ';
-  margin: 0 5px;
-}
-
-
-.slide-track .banner .text-content .text-into  {
-  text-decoration: none;
-  color: #FFFFFF;
-
-}
-
-@keyframes scroll {
-  0% {
-      transform: translateX(55%);
-  }
-  100% {
-      transform: translateX(-100%);
-  }
-}
-
-
-/*Estilo de carrusel*/
-
-
 body {
   background-color: var(--color-fondo);
-  padding: 0px 35px;
   align-items: center;
   justify-content: center;
+  overflow: scroll;
+  content: normal;
 }
 
-.title {
-  display: flex;
+.container-carousel {
+  padding: 0px 35px;
+  top: 85vh;
   position: fixed;
+  display: flex;
+}
+
+.title .title-carousel {
+  display: flex;
+  position:fixed;
   text-align: center;
   justify-content: center;
   min-width: min-content;
-  font-size: x-large;
-  left: 50%;
+  font-size: 50px;
+  left: 45%;
+  padding: 20px 10px;
   min-height: auto;
-  top: 40vh;
 }
 
 .carousel {
   min-width: 80%;
   width: 40%;
-  max-width: max-content;
+  height: 10vh;
   position: fixed;
-  top: 180px;
   display: flex;
   padding: 8%;
   align-items: center;
   justify-content: center;
-  min-height: 100vh;
+  min-height: 5vh;
   
 }
 
@@ -122,15 +72,19 @@ body {
   transform: translateY(-50%);
   transition: transform 0.1s linear;
 }
+
 .carousel i:active{
   transform: translateY(-50%) scale(0.85);
 }
+
 .carousel i:first-child{
   left: -22px;
 }
+
 .carousel i:last-child{
   right: -22px;
 }
+
 .carousel .box{
   display: grid;
   grid-auto-flow: column;
@@ -138,10 +92,10 @@ body {
   overflow-x: auto;
   scroll-snap-type: x mandatory;
   gap: 20px;
-  border-radius: 30px;
   scroll-behavior: smooth;
   scrollbar-width: none;
 }
+
 .box::-webkit-scrollbar {
   display: none;
 }
@@ -167,6 +121,7 @@ body {
   min-width: min-content;
   min-height: min-content;
 }
+
 .box .card {
   scroll-snap-align: start;
   text-align: center;
@@ -180,6 +135,7 @@ body {
   border-radius: 30px;
   border: solid #9CAC84c5;
 }
+
 .box .card .slide-img {
   background: var(--color-piespag);
   width: 180px;
@@ -189,6 +145,7 @@ body {
   border-radius: 30px;
   border: 2px;
 }
+
 .card .slide-img img {
   width: 165px;
   height: 165px;
@@ -198,30 +155,35 @@ body {
   object-fit: cover;
   border: 4px solid #FFFFFF;
 }
+
 .box .card h2 {
   font-weight: 600;
   font-size: 20px;
   margin: 30px 0 5px;
   min-width: min-content;
 }
+
 .box .card span {
   color: #505258;
   font-weight: 400;
   min-width: min-content;
   font-size: medium;
 }
+
 @media screen and (max-width: 900px) {
   .carousel .box {
     grid-auto-columns: calc((100% / 2) - 9px);
   }
 }
+
 @media screen and (max-width: 600px) {
   .carousel .box {
     grid-auto-columns: 100%;
   }
 
 }
-.overlay{
+
+.box .card .overlay{
   position: absolute;
   left: 50%;
   top: 50%;
@@ -235,6 +197,7 @@ body {
   justify-content: center;
   box-sizing: border-box;
   align-items: center;
+  visibility: hidden;
 }
 
 .buy-btn{
@@ -259,11 +222,7 @@ body {
   transition: all ease 0.3s;
 }
 
-.overlay{
-  visibility: hidden;
-}
-
-.slide-img:hover .overlay{
+.card:hover .overlay{
   visibility: visible;
   animation: fade 0.5s;
 }
