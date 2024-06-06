@@ -165,15 +165,23 @@ hr{
 /*Responsividad*/
 @media(max-width: 768px){
     nav {
-        background-color: #CAACDE;
+        /*background-color: #CAACDE;
         width: auto;
         height: auto;
-        display: contents;
+        display: contents;*/
+        flex-direction: column; /* Cambiar a columna en pantallas pequeñas */
+        align-items: flex-start;
     }
 
     .left, .right {
-        background-color: aqua;
         justify-content: space-between;
         width: 100%;
+    }
+
+}
+
+@media(max-width: 420px){
+    nav {
+        width: 420px;
     }
 }
