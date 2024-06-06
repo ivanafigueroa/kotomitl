@@ -5,19 +5,20 @@
     margin: 0;
     padding: 0;
     font-family: "Poppins", sans-serif;
+    box-sizing: border-box;
 }
 
 nav {
     background-color: #CAACDE;
     height: auto;
     padding: 10px 20px;
-    /*margin: 0;*/
     color: white;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    flex-wrap: wrap;
+    flex-wrap: wrap; /* Permite que los elementos se envuelvan en múltiples líneas */
 }
+
 .left, .right {
     display: flex;
     align-items: center;
@@ -55,12 +56,10 @@ nav {
 
 .btn-nav:hover {
     background-color: #a894b3;
-    transition: 0.4s;
     box-shadow: rgba(0, 0, 0, 0.25) 0px 0.0625em 0.0625em, rgba(0, 0, 0, 0.25) 0px 0.125em 0.5em, rgba(255, 255, 255, 0.1) 0px 0px 0px 1px inset;
-
 }
 
-/*Barra de busqueda*/
+/* Barra de búsqueda */
 .search {
     border: none;
     border-radius: 25px;
@@ -72,7 +71,6 @@ nav {
     display: flex;
     justify-content: center;
     align-items: center;
-    cursor: pointer;
 }
 
 .search:focus {
@@ -88,15 +86,14 @@ nav {
 #search-btn:hover {
     background-color: #ecf1f3;
     box-shadow: rgba(0, 0, 0, 0.25) 0px 0.0625em 0.0625em, rgba(0, 0, 0, 0.25) 0px 0.125em 0.5em, rgba(255, 255, 255, 0.1) 0px 0px 0px 1px inset;
-
 }
 
 .mostrar-menu {
-    font-size: 90px;
+    font-size: 30px; /* Ajuste de tamaño */
     border-radius: 10px;
     padding: 5px;
     height: 60px;
-    display: flex;
+    display: none; /* Ocultar por defecto */
     justify-content: center;
     align-items: center;
     cursor: pointer;
@@ -119,7 +116,6 @@ nav {
     position: absolute;
     top: 10px;
     left: 300px; /* Ajusta esta distancia según el ancho de tu menú */
-    
 }
 
 .menu {
@@ -134,7 +130,6 @@ nav {
     padding: 20px;
     box-shadow: 2px 0 5px rgba(0,0,0,0.5);
     z-index: 1001;
-    
 }
 
 .menu h3 {
@@ -144,9 +139,8 @@ nav {
     font-size: medium;
 }
 
-hr{
+hr {
     border: 1px solid white;
-
 }
 
 .menu .btn-nav {
@@ -162,18 +156,34 @@ hr{
     z-index: 1001;
 }
 
-/*Responsividad*/
-@media(max-width: 768px){
+/* Responsividad */
+@media (max-width: 768px) {
     nav {
-        background-color: #CAACDE;
-        width: auto;
-        height: auto;
-        display: contents;
+        flex-direction: column; /* Cambiar a columna en pantallas pequeñas */
+        align-items: flex-start;
     }
 
     .left, .right {
-        background-color: aqua;
-        justify-content: space-between;
         width: 100%;
+        justify-content: space-between;
+    }
+
+    .mostrar-menu {
+        display: flex; /* Mostrar el botón de menú en pantallas pequeñas */
+    }
+
+    .right {
+        order: -1; /* Mover la sección derecha arriba en pantallas pequeñas */
+        justify-content: space-between;
+    }
+
+    .btn-nav, .search, #search-btn {
+        flex: 1;
+        justify-content: center;
+    }
+
+    .esconder-menu {
+        top: 10px;
+        left: calc(100% - 50px); /* Ajustar posición en pantallas pequeñas */
     }
 }
