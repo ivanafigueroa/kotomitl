@@ -60,3 +60,6 @@ function actualizarNumeroCarrito(){
 
 actualizarNumeroCarrito();
 
+function abrirVentana() {
+    window.open('pagpago.html', 'popup', 'width=400,height=550');
+}

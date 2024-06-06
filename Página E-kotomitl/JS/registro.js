@@ -7,6 +7,8 @@ document.addEventListener('DOMContentLoaded', () => {
     const passwordInput = document.getElementById('passwordInput');
     const checkInput = document.getElementById('check');
 
+   
+
     form.addEventListener('submit', (e) => {
         e.preventDefault();
 
@@ -136,3 +138,5 @@ document.addEventListener('DOMContentLoaded', () => {
         }, 3000);
     }
 });
+
+
