@@ -1,0 +1,107 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    text-decoration: none;
+}
+
+/*:::::Pie de Pagina*/
+.barra-decorativa {
+    height: 49px; /* Altura de la barra */
+    background-color: #ccafd4; /* Color de la barra */
+    margin-top: 10px; /* Espacio entre la barra y el pie de página */
+    width: 100%;
+}
+
+.img-barra {
+    width: 49px;
+}
+
+.pie-pagina {
+    width: 100%;
+    background-color: #e3f3dc;
+}
+
+h1 {
+    color: #ccafd4;
+    font-size: larger;
+}
+
+.pie-pagina .grupo-1 {
+    width: 100%;
+    height: auto;
+    max-width: 1200px;
+    margin: 5px auto; /* Centra el grupo horizontalmente */
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 10px;
+    padding: 45px auto;
+    text-decoration: none;
+    
+}
+
+.pie-pagina .grupo-1 .box {
+    margin: 0;
+    padding: 5px auto;
+    text-align: center; /* Centra el contenido horizontalmente */
+    text-decoration: none;
+}
+
+.logo {
+    width: 50px;
+    border-radius: 10px;
+    background-color: whitesmoke;
+}
+
+.logo:hover {
+    background-color: #f3dceb;
+}
+
+.boton {
+    display: inline-flex; /* Para que ocupe toda la anchura disponible */
+    text-align: center; /* Para centrar el texto */
+    background-color: #ccafd4; /* Color de fondo del botón */
+    color: white; /* Color del texto */
+    font-size: medium;
+    padding: 10px 20px; /* Espacio interno del botón */
+    text-decoration: none; /* Quita el subrayado de los enlaces */
+    border-radius: 5px; /* Borde redondeado */
+    margin-top: 10px; /* Espacio superior */
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 0.0625em 0.0625em, rgba(0, 0, 0, 0.25) 0px 0.125em 0.5em, rgba(255, 255, 255, 0.1) 0px 0px 0px 1px inset;
+
+}
+
+.boton:hover {
+    background-color: #a894b3; /* Cambia el color de fondo al pasar el mouse */
+}
+
+.pie-pagina .grupo-1 .box h2 {
+    color: #ccafd4;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-size: large;
+}
+
+.pie-pagina .grupo-1 .box p {
+    color: #ccacde;
+    margin-bottom: 10px;
+}
+
+.pie-pagina .grupo-2 {
+    background-color: transparent;
+    padding: 5px 5px;
+    text-align: center;
+    color: black;
+}
+
+@media screen and (max-width: 800px) {
+    .pie-pagina .grupo-1 {
+        width: 90%;
+        grid-template-columns: repeat(1, 1fr);
+        grid-gap: 30px;
+        padding: 35px 0px;
+    }
+}

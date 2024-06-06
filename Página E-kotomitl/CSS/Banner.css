@@ -1,0 +1,128 @@
+:root {
+    --color-fondodos: #F3DCEB;
+    --color-fondo: #E4F3DC;
+    --color-botones: #CCAFD4;
+    --color-piespag: #CAACDE;
+    --color-resaltar: #9CAC84;
+    --color-hoover: #ECF1F3;
+}
+
+figure {
+    display: flex;
+}
+
+.container {
+    text-align: center;
+    padding-top: 3rem;
+    /*width: 100%;
+    height: 60%;
+    box-sizing: border-box;
+    display: flex;
+    position: fixed;*/
+}
+
+.banner-background {
+    background-color: #CAACDE;
+    margin-top: 20vh;
+   /* width: 100%;
+    height: 60%;
+    background-size:contain;
+    background-position: 50vh;
+    background-repeat: no-repeat;
+    justify-content: center;
+    align-items: center;
+    position: fixed; */
+}
+
+.banner-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 60px 30px 0;
+}
+
+/*.banner-textaline {
+     padding: 10% 20%;
+     margin-left: 50px;
+} */
+
+.banner-title{
+    letter-spacing: 10px;
+    font-size: 30px;
+    color: white;
+    margin-bottom: 12px;
+}
+
+.banner-text{
+    letter-spacing: 10px;
+    font-size: 100px;
+    font-weight: bold;
+    color: white;
+    font-family: Poppins;
+    max-width: 800px;
+    min-width: 768px;
+    margin: 0 auto 12px;
+}
+
+.banner-img {
+    width: 600px;
+    height: 600px;
+}
+
+#btn{
+    width: 300px;
+    height: 35px;
+    margin-left: 12%;
+    font-weight: bold;
+    background-color: white;
+    letter-spacing: 3px;
+    font-size: large;
+    color: #CAACDE;
+    border-radius: 20px;
+    border: none;
+    cursor: pointer;
+    /**/
+    display: flex;
+    max-width: fit-content;
+    padding: 5px;
+    margin: 0 auto;
+}
+
+#btn:hover {
+    color: black;
+    background-color: var(--color-fondodos);
+    transition: all ease 0.3s;
+}
+
+/**/
+@media only screen and (max-width: 756px) {
+    .container {
+        text-align: left;
+    }
+
+    .banner-container {
+        flex-direction: row;
+        justify-content: space-around;
+    }
+
+    .banner-title {
+        font-size: 15px;
+        letter-spacing: 3px;
+    }
+
+    .banner-text {
+        letter-spacing: 3px;
+        font-size: 45px;
+        font-weight: bold;
+    }
+
+    #btn {
+        width: 150;
+    }
+
+    .banner-img {
+        min-width: 10px;
+        min-height: 10px;
+
+    }
+}
