@@ -4,7 +4,7 @@
     display: flex; /*para que permita que se acomoden uno a lado del otro*/
     flex-wrap: wrap; /*para que los elementos se pongan uno debajo del otr*/
     gap: 50px;
-    margin: 5%;    
+    margin: 5px 5%;    
 }
 
 

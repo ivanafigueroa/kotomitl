@@ -14,17 +14,21 @@ body{
   height: 100vh; /*la altura de la página al 100%*/
 }
 
+a{
+  color: var(--color-botones);
+  text-decoration: none;
+}
+
 /*el que contiene el fondo del span, donde está el cero*/
 #cuenta-carrito{
-  background-color: var(--color-fondodos);
+  background-color: whitesmoke;
   border-radius: 100%; /*para que sea redondo*/
   display: inline-block; /*lo ponemos para que nos depie a ponerle un ancho*/
   height: 30px;
   line-height: 30px; /*para que el cero quede en medio verticalmente*/
   aspect-ratio: 1; /*para que sea completamente redondo*/
   text-align: center; /*para que el cero este en medio horizontalmente*/
-  position: absolute;
-
+  position: left;
 
 }
 

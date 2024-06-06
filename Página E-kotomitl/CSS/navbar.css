@@ -18,13 +18,13 @@ nav {
     align-items: center;
     flex-wrap: wrap;
 }
-.left, .right {
+#left, #right {
     display: flex;
     align-items: center;
     width: 50%;
 }
 
-.right {
+#right {
     justify-content: flex-end;
 }
 
@@ -35,7 +35,7 @@ nav {
 
 #btn-inicio {
     font-size: large;
-    margin-left: 0;
+    margin-left: 10px;
 }
 
 .btn-nav {
@@ -173,7 +173,7 @@ hr{
         align-items: flex-start;
     }
 
-    .left, .right {
+    #left, #right {
         justify-content: space-between;
         width: 100%;
     }

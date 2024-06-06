@@ -5,13 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="../CSS/navbar.css">
-    <script src="../JS/carritoService.js" defer></script>
-    <script src="../JS/prendas.js" defer></script> <!--referencia a nuestra base de datos o backend, va primero para que se carguen los productos-->
-	<script src="../JS/catalogo.js" defer></script>
+    
 </head>
 <body>
     <nav>
-        <div class="left">
+        <div id="left">
             <input type="checkbox" id="check">
             <label for="check" class="mostrar-menu">
                 &#8801;
@@ -37,10 +35,10 @@
                 </a>
             </div>
             <!--Carrito-->
-            <a href="./carrito.html" class="btn-nav" id="cart">
+            <!--<a href="./carrito.html" class="btn-nav" id="cart">
                 <img src="../Assents/navbar/carrito blanco.png" alt="Carrito" class="btn-img">
                 <span id="cuenta-carrito">0</span>
-            </a>
+            </a>-->
             <a href="./Inicio.html" class="btn-nav" id="btn-inicio">
                 <img src="../Assents/navbar/Logo.png" alt="Inicio" class="btn-img">
                 INICIO
@@ -50,7 +48,7 @@
             </label>
         </div>
 
-        <div class="right">
+        <div id="right">
             <a href="./perfilusuario.html" class="btn-nav">
                 <img src="../Assents/navbar/logo usuario blanco.png" alt="Usuario" class="btn-img">
             </a>
@@ -60,5 +58,6 @@
             </button>
         </div>
     </nav>
+
 </body>
 </html>
