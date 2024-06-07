@@ -14,9 +14,9 @@
     position: relative;
     max-width: max-content;
     min-width: max-content;
-    display: flex !important;  
+    display: flex;
     font-family: 'Poppins';
-    top: 7vh;
+    top: 5rem;
     transform: translate(-55%, -70%);
     background-color: var(--color-botones);
   }
@@ -62,10 +62,4 @@
     }
   }
 
-  @media only screen and (max-width: 756px) {
-    .slide-track .slide-containt {
-      font-size: 15px;
-       height: 0px;
-       margin-top: 5px;
-    }
-  }
+  

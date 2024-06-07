@@ -1,0 +1,107 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+body {
+    margin: 0;
+    font-family: 'Poppins';
+    background-color: #e3f3dc;
+}
+
+.banner-container {
+    margin-top: 30px;
+    position: relative;
+    overflow: hidden;
+    white-space: nowrap;
+    background-color: #9cac84;
+    color: whitesmoke;
+    padding: 10px 0;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+
+}
+
+.banner {
+    display: inline-block;
+    white-space: nowrap;
+    animation: scroll 60s linear infinite;
+    -webkit-animation: scroll 60s linear infinite;
+
+}
+
+.banner span {
+    font-size: larger;
+    display: inline-block;
+    padding: 0 5px;
+}
+
+@keyframes scroll {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(-100%);
+    }
+}
+
+.sec-banner {
+    margin-top: 50px;
+    background-color: #caacde;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+}
+
+.text {
+    width: 50%;
+    margin: 5%;
+    display: grid;
+    place-items: center;
+    color: whitesmoke;
+}
+
+#line-1 {
+    font-size: 2.5vw;
+    margin: 10px;
+}
+
+#koto {
+    font-size: 7vw;
+    font-weight: 700;
+    margin: 10px;
+}
+
+.logo {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+}
+
+#boton{
+    background-color: whitesmoke;
+    padding: 8px;
+    border-radius: 10px;
+    font-size: medium;
+    color: #caacde;
+    text-decoration: none;
+    font-weight: 500;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 0.0625em 0.0625em, rgba(0, 0, 0, 0.25) 0px 0.125em 0.5em, rgba(255, 255, 255, 0.1) 0px 0px 0px 1px inset;
+
+}
+
+#boton:hover {
+    background-color: #b89ebf;
+    color: whitesmoke;
+}
+
+img {
+    width: 30vw;
+}
+
+.title {
+    margin: 5%;
+    display: grid;
+    place-items: center;
+}
+
+
+
