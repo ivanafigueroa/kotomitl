@@ -7,45 +7,52 @@
     --color-hoover: #ECF1F3;
 }
 
+figure {
+    display: flex;
+}
+
 .container {
-    width: 100%;
+    text-align: center;
+    padding-top: 2rem;
+    /*width: 100%;
     height: 60%;
     box-sizing: border-box;
     display: flex;
-    position: fixed;
+    position: fixed;*/
 }
 
-.banner-first{
-    width: 100%;
-    height: 60%;
-    background-image: url(./Assets/Banner.png);
+.banner-background {
     background-color: #CAACDE;
-    background-size:contain;
-    background-position: 50vh;
-    background-repeat: no-repeat;
-    justify-content: center;
+    margin-top: 3vh;
+}
+
+.banner-container {
+    display: flex;
+    flex-direction: column !important;
     align-items: center;
-    position: fixed; 
-    margin-top: 20vh;
+    padding: 30px 30px 0;
 }
 
 .banner-textaline {
-   padding: 10% 20%;
-margin-left: 50px;
+     margin-left: 50px;
 }
 
-.banner-textaline .banner-text{
+.banner-title{
     letter-spacing: 10px;
-    font-weight: bold;
-    font-size: 30px;
+    font-size: 40px;
     color: white;
+    margin-bottom: 12px;
 }
 
-.banner-textaline .banner-title{
+.banner-text{
     letter-spacing: 10px;
     font-size: 100px;
+    font-weight: bold;
     color: white;
     font-family: Poppins;
+    max-width: 800px;
+    min-width: 768px;
+    margin: 0 auto 12px;
 }
 
 #btn{
@@ -60,10 +67,45 @@ margin-left: 50px;
     border-radius: 20px;
     border: none;
     cursor: pointer;
+    /**/
+    display: flex;
+    max-width: fit-content;
+    padding: 5px;
+    margin: 0 auto;
 }
 
 #btn:hover {
     color: black;
     background-color: var(--color-fondodos);
     transition: all ease 0.3s;
+}
+
+
+/**/
+@media only screen and (max-width: 756px) {
+   .banner-container {
+        flex-direction: row;
+        justify-content: space-around;
+    }
+
+    .banner-title {
+        font-size: 15px;
+        letter-spacing: 3px;
+    }
+
+    .banner-text {
+        letter-spacing: 3px;
+        font-size: 45px;
+        font-weight: bold;
+    }
+
+    #btn {
+        width: 150;
+    }
+
+    .banner-img {
+        min-width: 10px;
+        min-height: 10px;
+
+    }
 }

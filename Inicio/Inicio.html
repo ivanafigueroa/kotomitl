@@ -3,20 +3,27 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Inicio</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
         <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
-        <link rel="stylesheet" href="./Carrusel.css">
-        <link rel="stylesheet" href="./BannerInfinito.css">
-        <link rel="stylesheet" href="./Banner.css">
+        <link rel="stylesheet" href="../CSS/BannerInfinito.css">
+        <link rel="stylesheet" href="../CSS/Banner.css">
+        <link rel="stylesheet" href="../CSS/Carrusel.css">
+        <link rel="stylesheet" href="../CSS/BannerFo.css">
+        <script src="../JS/navbar.js" defer></script><!--JS de barra de navegación-->
+	      <script src="../JS/footer.js" defer></script><!--JS de footer-->
 </head>
+
 <body>
+
+  <nav-bar></nav-bar><!--Barra de navegación-->
+
   <!--Banner infinito-->
   <div class="slider">
     <div class="slide-track">
-            <ul class="banner">
+            <ul class="slide-containt">
                  <li class="text-content">
                     <a href="#" class="text-into"> | ❤︎ | Nuestra comunidad demuestra que la moda sostenible es bella, poderosa y accesible para todas </a>
                 </li>
@@ -68,13 +75,19 @@
 
 <!--Banner-->
 <div class="container">
-  <div class="banner-first"> 
+  <div class="banner-background"> 
+    <div class="banner-container">
       <div class="banner-textaline"> 
-          <h2 class="banner-text">¡Moda sostenible a tu puerta!</h2>
-          <h1 class="banner-title">E - Kotomitl</h1>
-         <a href="https://ecuador.inaturalist.org/taxa/35280-Cyclura-rileyi"><button id="btn">¿Quiénes somos?</button> </a>
+          <div class="banner-title">¡Moda sostenible a tu puerta!</div>
+          <div class="banner-text">E - Kotomitl</div>
+          <a href="./aboutus.html"><button id="btn">¿Quiénes somos?</button> </a>
       </div>
+      <figure>
+        <img width="600" height="600" src="../Assents/Inicio/EkoLogo.png" alt="Banner" class="banner-img"/>
+      </figure>
+    </div>
   </div>
+</div>
 
 <!--Carrusel de imagenes-->
 <div class="container-carousel">
@@ -86,10 +99,8 @@
         <ul class="box">
           <li class="card">
             <div class="slide-img">
-              <img src="./Assets/jeans1.jpeg" alt="img" draggable="false">
-                <div class="overlay">
-                 <a href="#" class="buy-btn">Compra Ahora</a>
-                </div>
+              <img src="../Assents/Inicio/jeans1.webp" alt="img" draggable="false">
+                
             </div>
             <h2>Jeans rectos</h2>
             <span>$200</span>
@@ -98,22 +109,16 @@
 
           <li class="card">
             <div class="slide-img">
-              <img src="/Assets/blusa1.jpg" alt="img" draggable="false">
-                <div class="overlay">
-                 <a href="#" class="buy-btn">Compra Ahora</a>
-                </div>
+              <img src="../Assents/Inicio/short3.webp" alt="img" draggable="false">
             </div>
-            <h2>Blusa estampada</h2>
+            <h2>Short negro</h2>
             <span>$200</span>
             <span>Talla: Mediana</span>
           </li>
 
           <li class="card">
             <div class="slide-img">
-              <img src="./Assets/short1.jpeg" alt="img" draggable="false">
-                <div class="overlay">
-                  <a href="#" class="buy-btn">Compra Ahora</a>
-                </div>
+              <img src="../Assents/Inicio/short1.webp" alt="img" draggable="false">
             </div>
             <h2>Mom shorts</h2>
             <span>$200</span>
@@ -122,10 +127,7 @@
 
           <li class="card">
             <div class="slide-img">
-              <img src="./Assets/chamarra1.jpg" alt="img" draggable="false">
-                <div class="overlay">
-                  <a href="#" class="buy-btn">Compra Ahora</a>
-                </div>
+              <img src="../Assents/Inicio/chamarra1.webp" alt="img" draggable="false">
             </div>
             <h2>Chamarra peleonera</h2>
             <span>$200</span>
@@ -134,10 +136,7 @@
 
           <li class="card">
             <div class="slide-img">
-              <img src="./Assets/pijama2.jpeg" alt="img" draggable="false">
-                <div class="overlay">
-                  <a href="#" class="buy-btn">Compra Ahora</a>
-                </div>
+              <img src="../Assents/Inicio/pijama2.webp" alt="img" draggable="false">
             </div>
             <h2>Vestido pijama</h2>
             <span>$200</span>
@@ -146,20 +145,28 @@
 
           <li class="card">
             <div class="slide-img">
-              <img src="./Assets/blusa2.jpg" alt="img" draggable="false">
-                <div class="overlay">
-                  <a href="#" class="buy-btn">Compra Ahora</a>
-                </div>
+              <img src="../Assents/Inicio/pijama.webp" alt="img" draggable="false">
             </div>
-            <h2>Blusa azul</h2>
+            <h2>Pijama conjunto</h2>
             <span>$200</span>
             <span>Talla: Chica</span>
           </li>
         </ul>
         <i id="right" class="fa-solid fa-angle-right"></i>
   </div>
+
+  <div class="container-foo">
+     <div class="banner-foo">
+       <div class="overlay-foo">
+         <div class="banner-foo-title">#ModaConPropósito</div>
+         <div class="banner-foo-text">#ModaE-ko</div>
+        </div>
+      </div>
+  </div>
 </div>
+
+<foo-ter></foo-ter><!--Footer-->
         
-<script src="./Carrusel.js"></script>
+<script src="../JS/Carrusel-inicio.js"></script>
 </body>
 </html>
