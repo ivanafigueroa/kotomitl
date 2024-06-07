@@ -15,12 +15,12 @@
         <!--Izquierda-->
     <div class="row">
         <div class="col-md-3 pt-0">
-          <img src="./Assets/version png.png" id="logo">
+          <img src="./Assets/version png.png" id="logito">
             <div class="list-group list-group-flush account-settings-links" id="list-tab" role="tablist">
 
                 <a class="list-group-item" id="list-general-list" data-bs-toggle="list" href="#list-general"> <img src="./Assets/perfil-del-usuario.png" alt="">DATOS</a>
-
-                <a class="list-group-item" id="list-carrito" data-bs-toggle="list" href="#list-change-carrito"> <img src="./Assets/carritoblack.png" alt=""> CARRITO</a>
+                <!--Se agrego el onclick para meter el carrito. Lo mismo aplica para gregar la pag de pedidos-->
+                <a class="list-group-item" id="list-carrito" data-bs-toggle="list" href="#list-change-carrito"  onclick="url=document.getElementById('url').value; abrir_pagina(url, 'list-change-carrito')"> <img src="./Assets/carritoblack.png" alt=""> CARRITO</a>
 
                 <a class="list-group-item" id="list-favs" data-bs-toggle="list" href="#list-change-favs"> <img src="./Assets/noteblack.png" alt="">PEDIDOS</a>
 
@@ -76,10 +76,11 @@
                       </form>
                     </div>
                 </div>
-                <div class="tab-pane fade" id="list-change-carrito">
-                  <img src="./Assets/Gato.png" id="gato">
-                  <!--Aqui adentro va referenciado el carrito-->
-
+                <div class="tab-pane fade" id="list-change-carrito" onclick="abrir_pagina('cart.html', 'list-change-carrito')">
+                  
+                  <!--Aqui adentro va referenciado el carrito: <img src="./Assets/Gato.png" id="gato">
+                      Se agrega el onclick aqui tambien -->
+                  
                   
                 </div>
                 <div class="tab-pane fade" id="list-change-favs">
