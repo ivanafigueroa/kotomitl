@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Comptible" content="ie=edge">
+    <title>Cargar Páginas en un Divs</title>
+
+	<script>
+		function abrir_pagina(url, id){
+			 const contentDiv = document.getElementById(id);
+		
+			 // Realizar una solicitud para obtener el contenido de la página
+			 fetch(url)
+				  .then(response => {
+						if (!response.ok) {
+							 throw new Error('No se pudo abrir la página');
+						}
+						return response.text();
+				  })
+				  .then(data => {
+		//            insertContent(data);
+					  contentDiv.innerHTML = data;
+				  })
+				  .catch(error => {
+						console.error('Error al abrir la página:', error);
+				  });
+		}
+	</script>
+
+</head>
+
+
+<body>
+
+    <h1>Abrir Página en un Div</h1>
+    <input type="text" id="url" placeholder="Ingresa la página que quieres abrir" style="width: 300px;">
+    <button id="boton" onclick="url=document.getElementById('url').value; abrir_pagina(url, 'contentDiv')">Abrir Página</button>
+    <div id="contentDiv" style="border: 1px solid #000; padding: 10px; margin-top: 10px;">
+        <!-- Aquí se cargará la página -->
+    </div>
+
+	<br><br>
+	<table width=80% align=center border=1>
+	<tr>
+	<td width=50%>
+	<div id="div1" onclick="abrir_pagina('pagina1.html', 'contentDiv')">div1</div>
+	<td width=50%>
+	<div id="div2" onclick="abrir_pagina('pagina2.html', 'contentDiv')">div2</div>
+	<tr>
+	<td width=50%>
+	<div id="div3" onclick="abrir_pagina('pagina3.html', 'contentDiv')">div3</div>
+	<td width=50%>
+	<div id="div4" onclick="abrir_pagina('pagina4.html', 'contentDiv')">div4</div>
+	</table>
+	
+	
+	<script>
+		abrir_pagina('pagina1.html', 'div1');
+		abrir_pagina('pagina2.html', 'div2');
+		abrir_pagina('pagina3.html', 'div3');
+		abrir_pagina('pagina4.html', 'div4');
+	</script>
+
+
+</body>
+</html>
