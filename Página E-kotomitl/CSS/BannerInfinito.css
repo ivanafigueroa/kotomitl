@@ -16,7 +16,7 @@
     min-width: max-content;
     display: flex !important;  
     font-family: 'Poppins';
-    top: 5vh;
+    top: 7vh;
     transform: translate(-55%, -70%);
     background-color: var(--color-botones);
   }

@@ -24,6 +24,11 @@ document.querySelector('form').addEventListener('submit', function(event) {
     // Obtener la descripción del detalle de la prenda
     const detail = document.getElementById('detail').value;
 
+    const titular = document.getElementById('titular').value;
+
+    const card = document.getElementById('card').value;
+
+
     // Crear un array de imágenes
     let imgArray = [];
     for (let i = 0; i < imgArticles.length; i++) {
@@ -36,7 +41,9 @@ document.querySelector('form').addEventListener('submit', function(event) {
         category: category,
         desArticle: desArticle,
         gridRadios: gridRadios,
-        detail: detail
+        detail: detail,
+        titular: titular,
+        card: card
     };
 
     // Convertir el objeto a formato JSON

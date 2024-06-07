@@ -59,3 +59,8 @@ option {
     background-color: #a894b3;
     color: white;
 }
+
+#titularname {
+    padding-left: 3.2vw ;
+    padding-right: 3.2vw;
+}
