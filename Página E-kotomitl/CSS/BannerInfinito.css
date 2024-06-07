@@ -11,12 +11,12 @@
 .slider {
     background-color: var(--color-fondo);
     box-sizing: border-box;
-    position: fixed;
+    position: relative;
     max-width: max-content;
     min-width: max-content;
     display: flex !important;  
     font-family: 'Poppins';
-    top: 15vh;
+    top: 5vh;
     transform: translate(-55%, -70%);
     background-color: var(--color-botones);
   }
