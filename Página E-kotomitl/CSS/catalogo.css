@@ -1,0 +1,43 @@
+/*Esta hoja de estilos es sólo para el index. Para darle formato a las tarjetas de las prendas*/
+
+#productos-container{
+    display: flex; /*para que permita que se acomoden uno a lado del otro*/
+    flex-wrap: wrap; /*para que los elementos se pongan uno debajo del otr*/
+    gap: 50px;
+    margin: 5px 5%;    
+}
+
+
+.tarjeta-producto{
+    margin: auto;
+    max-width: 600px;
+    text-align: center;
+    background-color: var(--color-fondo);
+    padding: 10px;
+    box-shadow: 0 0 5px  rgba(156, 172, 132, 0.5);
+    transition: 200ms; /*la transición de la imagen al levantarse*/
+    border-style: dashed;
+    border-width: 2px;
+    border-color: #ccafd4;
+}
+
+
+
+.tarjeta-producto:hover{
+    translate: 0 -15px;
+    box-shadow: 0 10px 5px  rgb(156, 172, 132, 0.70);
+}
+
+.tarjeta-producto img{
+    width: 300px;
+    height: 300px;
+    transition: 4s;
+
+}
+
+.tarjeta-producto img:hover{
+    transform: scale(1.1);
+    transition: 4s;
+}
+
+

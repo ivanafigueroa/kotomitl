@@ -1,0 +1,248 @@
+/*Colors*/
+:root {
+    --color-fondodos: #F3DCEB;
+    --color-fondo: #E4F3DC;
+    --color-botones: #CCAFD4;
+    --color-piespag: #CAACDE;
+    --color-resaltar: #9CAC84;
+    --color-hoover: #ECF1F3;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: 100%;
+  font-family: "Poppins", sans-serif;
+  text-decoration: none;
+}
+
+body {
+  background-color: var(--color-fondo);
+  align-items: center;
+  justify-content: center;
+  content: normal;
+
+}
+
+.container-carousel {
+  top: 3rem;
+  
+}
+
+.title-carousel {
+  position: relative;
+  text-align: center;
+  justify-content: center;
+  min-width: min-content;
+  font-size: 50px;
+  width: 500px;
+  height: 100px;
+  left: 41%;
+  margin-top: 3rem;
+  text-shadow: 0 10px 30px #0808085f;
+}
+
+.carousel {
+  position: relative;
+  min-width: 80%;
+  width: auto;
+  height: auto;
+  display: relative;
+  margin: 3%;
+  align-items: center;
+  justify-content: center;
+  min-height: min-content;
+  max-width: max-content;
+}
+
+.carousel i {
+  top: 50%;
+  height: 50px;
+  width: 50px;
+  cursor: pointer;
+  font-size: 1.5rem;
+  position: absolute;
+  text-align: center;
+  line-height: 50px;
+  background-color: var(--color-botones);
+  border-radius: 50%;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.343);
+  transform: translateY(-50%);
+  transition: transform 0.1s linear;
+}
+
+.carousel i:active{
+  transform: translateY(-50%) scale(0.85);
+}
+
+.carousel i:first-child{
+  left: -22px;
+}
+
+.carousel i:last-child{
+  right: -22px;
+}
+
+.carousel .box{
+  display: grid;
+  grid-auto-flow: column;
+  grid-auto-columns:calc(100%/ 4 - 16px);
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  gap: 20px;
+  overflow: hidden;
+  scroll-behavior: smooth;
+  scrollbar-width: none;
+}
+
+.box::-webkit-scrollbar {
+  display: none;
+}
+
+.box.no-transition {
+  scroll-behavior: auto;
+}
+
+.box.dragging {
+  scroll-snap-type: none;
+  scroll-behavior: auto;
+}
+
+.box.dragging .card {
+  cursor: grab;
+  user-select: none;
+}
+
+.box :where(.card, .slide-img) {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-width: min-content;
+  min-height: min-content;
+}
+
+.box .card {
+  scroll-snap-align: start;
+  text-align: center;
+  height: 320px;
+  list-style: none;
+  background: var(--color-fondodos);
+  cursor: pointer;
+  flex-direction: column;
+  padding: 20px;
+  box-shadow: 0 10px 20px #00000030;
+  border-radius: 30px;
+  border: solid #9CAC84c5;
+}
+
+.box .card .slide-img {
+  background: var(--color-piespag);
+  width: 210px;
+  height: 210px;
+  min-width: min-content;
+  min-height: min-content;
+  border-radius: 30px;
+  border: 2px;
+}
+
+.card .slide-img img {
+  width: 190px;
+  height: 190px;
+  min-width: min-content;
+  min-height: min-content;
+  border-radius: 30px;
+  object-fit: cover;
+  border: 4px solid #FFFFFF;
+}
+
+.box .card h2 {
+  font-weight: 600;
+  font-size: 20px;
+  margin: 30px 0 5px;
+  min-width: min-content;
+}
+
+.box .card span {
+  color: #505258;
+  font-weight: 400;
+  min-width: min-content;
+  font-size: medium;
+}
+
+@media only screen and (max-width: 900px) {
+  .title .title-carousel {
+  left: 20%;
+  width: 500px;
+  height: 100px;
+ }
+ 
+ .carousel {
+  height: auto;
+ }
+
+  .carousel .box {
+    grid-auto-columns: calc((100% / 2) - 9px);
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .carousel .box {
+    grid-auto-columns: 100%;
+  }
+
+}
+/*
+.box .card .overlay{
+  position: relative;
+  left: 50%;
+  top: -50%;
+  transform: translate(-50%, -50%);
+  width: auto;
+  height: auto;
+  min-width: min-content;
+  background-color: #FFFFFF99;
+  display: flex;
+  border-radius: 30px;
+  justify-content: center;
+  box-sizing: border-box;
+  align-items: center;
+  visibility: hidden;
+}
+
+.buy-btn{
+  width: 160px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--color-botones);
+  color: black;
+  font-weight: 700;
+  letter-spacing: 1px;
+  font-family: 'Poppins';
+  border-radius: 20px;
+  box-shadow: 2px 2px 30px #00000063;
+  text-decoration: none;
+}
+
+.buy-btn:hover {
+  color: var(--color-botones);
+  background-color: var(--color-fondodos);
+  transition: all ease 0.3s;
+}
+
+.card:hover .overlay{
+  visibility: visible;
+  animation: fade 0.5s;
+}
+
+@keyframes fade {
+  0% {
+    opacity: 0;
+  }
+  100%{
+    opacity: 1;
+  }
+}
+
+*/

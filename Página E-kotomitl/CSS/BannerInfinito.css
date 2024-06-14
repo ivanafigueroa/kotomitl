@@ -1,0 +1,65 @@
+/*Colors*/
+:root {
+    --color-fondodos: #F3DCEB;
+    --color-fondo: #E4F3DC;
+    --color-botones: #CCAFD4;
+    --color-piespag: #CAACDE;
+    --color-resaltar: #9CAC84;
+    --color-hoover: #ECF1F3;
+}
+
+.slider {
+    background-color: var(--color-fondo);
+    box-sizing: border-box;
+    position: relative;
+    max-width: max-content;
+    min-width: max-content;
+    display: flex;
+    font-family: 'Poppins';
+    top: 5rem;
+    transform: translate(-55%, -70%);
+    background-color: var(--color-botones);
+  }
+  
+  .slide-track {
+    display: flex;
+    position: relative;
+    white-space: nowrap;
+    overflow: hidden;
+    box-sizing: border-box;
+   
+  }
+  
+  .slide-containt {
+    display: flex;
+    position: relative;
+    font-size: 40px;
+    white-space: nowrap;
+    list-style: none;
+    height: 65px;
+    margin-top: 10px;
+    animation: scroll 300s linear infinite;
+  }
+  
+  .slide-track .slide-containt .text-content::after {
+    content: '  ';
+    margin: 0 5px;
+  }
+  
+  
+  .slide-track .slide-containt .text-content .text-into  {
+    text-decoration: none;
+    color: #FFFFFF;
+  
+  }
+  
+  @keyframes scroll {
+    0% {
+        transform: translateX(55%);
+    }
+    100% {
+        transform: translateX(-100%);
+    }
+  }
+
+  

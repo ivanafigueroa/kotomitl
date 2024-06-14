@@ -1,0 +1,98 @@
+/* Reset CSS para normalizar los estilos */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Estilos globales */
+body {
+    font-family: "Poppins", sans-serif;
+    line-height: 1.6;
+    background-color: #e4f3dc;
+    color: black;
+}
+
+.container {
+    background-color: #f3dceb;
+    width: 80%; /* Puedes ajustar el ancho como desees */
+    margin: 40px auto;
+    overflow: hidden; /* Para limpiar floats */
+    padding: 20px; /* Agregamos un espacio interno al contenedor */
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th, td {
+    padding: 10px;
+    text-align: left;
+    border-bottom: 1px solid #ecf1f3;
+}
+
+th {
+    background-color: #e3f3dc;
+}
+
+
+
+/* CSS */
+.button-83 {
+  appearance: button;
+  background-color: #caacde;
+  /*background-image: linear-gradient(to bottom, #fff, #f8eedb);*/
+  border: 0 solid #e5e7eb;
+  border-radius: .5rem;
+  box-sizing: border-box;
+  color: white;
+  column-gap: 1rem;
+  cursor: pointer;
+  display: flex;
+  font-family: "Poppins", sans-serif;
+  font-size: medium;
+  /*font-weight: 700;*/
+  line-height: 24px;
+  margin: 0;
+  outline: 2px solid transparent;
+  padding: 1rem 1.5rem;
+  text-align: center;
+  text-transform: none;
+  transition: all .1s cubic-bezier(.4, 0, .2, 1);
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 0.0625em 0.0625em, rgba(0, 0, 0, 0.25) 0px 0.125em 0.5em, rgba(255, 255, 255, 0.1) 0px 0px 0px 1px inset;
+
+}
+
+.button-83:hover {
+    background-color: #a894b3;
+}
+
+/*.button-83:active {
+  background-color: #f3f4f6;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 0.0625em 0.0625em, rgba(0, 0, 0, 0.25) 0px 0.125em 0.5em, rgba(255, 255, 255, 0.1) 0px 0px 0px 1px inset;
+  transform: translateY(0.125rem);
+}*/
+
+.button-83:focus {
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 0.0625em 0.0625em, rgba(0, 0, 0, 0.25) 0px 0.125em 0.5em, rgba(255, 255, 255, 0.1) 0px 0px 0px 1px inset;
+
+}
+
+.poppins-light {
+    font-family: "Poppins", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+  }
+
+a{
+    text-decoration: none;
+}

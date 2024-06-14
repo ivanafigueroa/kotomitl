@@ -1,0 +1,103 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+body {
+    background-color: #E3F3DC;
+    font-family: Poppins;
+    font-size: medium;
+    /* margin: 30px; */
+}
+
+form {
+
+    padding-top: 6%;
+    padding-bottom: 6%;
+    padding-right: 6%;
+    padding-left: 6%;
+    margin-left: 3%;
+    margin-right: 3%;
+    margin-top: 3%;
+    margin-bottom: 3%;
+    background-color: #F3DCEB;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
+    margin-top: 5vw;
+    margin-bottom:5vw;
+}
+
+input {
+    border: dashed 2px grey;
+}
+
+#tyc {
+    font-size: small;
+    font-style: italic;
+}
+
+.emailHelp {
+    font-size: small;
+}
+
+.btn {
+    background-color: #CAACDE !important;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 0.0625em 0.0625em, rgba(0, 0, 0, 0.25) 0px 0.125em 0.5em, rgba(255, 255, 255, 0.1) 0px 0px 0px 1px inset;
+    width: 150px;
+    color: whitesmoke !important; 
+}
+a#links {
+    color: grey;
+    font-style: italic;
+    font-size: small;
+}
+#emailPriv{
+    font-size: small;
+}
+
+input.form-control {
+    border: dashed .15vw #CAACDE;
+}
+
+input.form-control:focus {
+    border: dashed .15vw #CAACDE;
+    box-shadow: none;
+}
+
+input#check.form-check-input {
+    background-color: #CAACDE;
+    border: none;
+}
+
+#sesionLink {
+    font-size: large;
+    font: bold;
+    color: gray;
+}
+p {
+    font-size: small;
+}
+.imagen-pequena {
+    width: 100px; /* Cambiar el valor según lo pequeña que quieras la imagen */
+    height: center; /* Esto asegura que la altura se ajuste automáticamente proporcionalmente al ancho */
+  }
+#exampleModal {
+    width: 100vw;
+    place-items: center;
+}
+
+.modal-content {
+    background-color: #E3F3DC;
+
+}
+
+.modal-header {
+    background-color: #f3dceb;
+}
+
+
+@media(max-width: 435px){
+    #exampleModal {
+        width: 30%;
+        height: 30%;
+    }
+    .modal-content {
+        width: 30%;
+    }
+}

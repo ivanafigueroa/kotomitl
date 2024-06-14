@@ -1,0 +1,87 @@
+#productos-container {
+    width: auto;
+    margin: 20px; /*auto para que se centren los elementos*/
+    align-items: center;
+  
+  }
+  
+  .tarjeta-producto {
+    display: flex; /*para que queden uno de lado del otro*/
+    gap: 35px; /*La distancia que tendrán de separación los elementos*/
+    align-items: center; /*para centrar elementos*/
+    height: 250px;
+    width: 600px;
+    margin: auto;
+    margin-top: 10px;
+    background-color: var(--color-fondo);
+    box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
+    padding: 10px;
+    border: 2px dashed #a894b3;
+  }
+
+  
+  
+  .tarjeta-producto img { /*las imagenes dentro del contenedor tarjeta-producto*/
+    height: 250px;
+    width: 250px; /*para que las imagenes no tengan distinto tamaño, ocupen el mismo espacio*/
+    /*border-style: dashed;
+    border-width: 1px;*/
+    box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
+    
+  }
+
+  
+  /*Para acomodar las letras*/
+  .tarjeta-producto h3{
+   width: 80px;
+  }
+  
+  #totales {
+    background-color: white;
+    margin: auto;
+    width: 60%;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    text-align: center;
+    box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
+  
+  }
+
+  button {
+    margin: 10px;
+    height: 40px;
+    font-family: 'Poppins';
+    font-size: medium;
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 0.0625em 0.0625em, rgba(0, 0, 0, 0.25) 0px 0.125em 0.5em, rgba(255, 255, 255, 0.1) 0px 0px 0px 1px inset;
+  }
+
+  button:hover {
+    background-color: #a894b3;
+  }
+
+  #carrito-vacio{
+    text-align:center;
+  }
+
+  @media(max-width: 768px) {
+    .tarjeta-producto {
+      display: grid;
+      place-items: center;
+      max-width: 300px;
+      height: auto;
+      gap: 5px;
+    }
+
+    .tarjeta-producto img {
+      border: none;
+      box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
+      margin-top: 10px;
+    }
+  }
+
+  foo-ter {
+    margin-bottom: 0;
+  }
+
+  

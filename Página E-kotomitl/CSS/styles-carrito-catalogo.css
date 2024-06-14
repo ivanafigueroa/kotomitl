@@ -1,0 +1,78 @@
+/*Este css es compartido para el index html y para el cart html.*/
+:root{
+  --color-fondo: #F3DCEB;
+  --color-fondodos: #E4F3DC;
+  --color-botones: #CCAFD4;
+  --color-piespag: #CAACDE;
+}
+body{
+  background-color: var(--color-fondodos);
+  font-family: "Poppins";
+  margin: 0;
+  display: flex; /*nos permite que el footer quede abajo de todo*/
+  flex-direction: column; /*para que la barra y el pie queden uno debajo del otro*/
+  height: 100vh; /*la altura de la página al 100%*/
+}
+
+a{
+  color: var(--color-botones);
+  text-decoration: none;
+}
+
+/*el que contiene el fondo del span, donde está el cero*/
+#cuenta-carrito{
+  background-color: whitesmoke;
+  border-radius: 100%; /*para que sea redondo*/
+  display: inline-block; /*lo ponemos para que nos depie a ponerle un ancho*/
+  height: 30px;
+  line-height: 30px; /*para que el cero quede en medio verticalmente*/
+  aspect-ratio: 1; /*para que sea completamente redondo*/
+  text-align: center; /*para que el cero este en medio horizontalmente*/
+  position: left;
+
+}
+
+#logo{
+  height: 60px;    /*atura*/
+}
+
+/*para el carrito de compras seleccionamos el heade, el nav y la imagen que está dentro*/
+header nav img{
+  height: 60px;
+}
+
+footer{
+  text-align: center;
+  box-shadow: 1px -3px 5px rgba(0, 0, 0, 0.09);
+/*se pone negativa la sombra para que sea para arriba*/
+
+margin-top: auto;
+height: 80px;
+background-color: #CAACDE;
+}
+
+h3, p{
+  margin: 5px 0;
+}
+
+button{
+  background-color: var(--color-botones);
+  font-family: 'Poppins';
+  color: whitesmoke;
+  font-size: medium;
+  padding: 5px 10px; /*5  de izq a der y 10 de arriba a bajo*/
+  border: unset; /*borramos el borde*/
+  border-radius: 10px; /*para que esté redondeado*/
+  cursor: pointer; /*para que el cursor cambie a una manita cuando esté arriba del botón*/
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 0.0625em 0.0625em, rgba(0, 0, 0, 0.25) 0px 0.125em 0.5em, rgba(255, 255, 255, 0.1) 0px 0px 0px 1px inset;
+
+}
+
+button:hover {
+  background-color: #a894b3;
+}
+  
+
+.escondido{
+  display: none;
+}

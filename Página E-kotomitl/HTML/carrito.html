@@ -1,0 +1,49 @@
+<!--Esta página es la página del carrito que va a compartir el header y el footer por ello una vez diseñados header y footer copiamos el html-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="../CSS/styles-carrito-catalogo.css">
+	<link rel="stylesheet" href="../CSS/carrito.css">
+	<link rel="stylesheet" href="../CSS/navbar.css">
+	<script src="../JS/carrito.js" defer></script>
+	<script src="../JS/carritoService.js" defer></script>
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+	<title>Carrito</title>
+	<script src="../JS/navbar.js" defer></script>
+	<script src="../JS/footer.js" defer></script>
+    <link rel="stylesheet" href="../CSS/btn-carrito.css">
+</head>
+<body>
+
+    <nav-bar></nav-bar>
+
+	<div id="carrito">
+        <a href="./carrito.html" class="btn-carrito" id="cart">
+            <span id="cuenta-carrito">0</span>
+            <img src="../Assents/navbar/carrito blanco.png" alt="Carrito" class="carrito-img">
+        </a>
+    </div>
+	
+	<main>
+		<p id="carrito-vacio">Aún no hay productos en tu carrito. <a href="./catalogo.html">Agrega algunos</a></p>
+		<section id="productos-container"></section>
+		<br>
+		<br>
+		<section id="totales">
+			<p>Total de productos: <span id="unidades">0</span></p>
+			<p>Precio total: $<span id="precio">0</span></p>
+            <button href="#" onclick="abrirVentana()">Comprar</button>
+		   <!-- <button disable>Comprar</button>-->
+			<button id="reiniciar">Reiniciar carrito</button>
+		</section>
+	</main>
+	<br>
+	<foo-ter></foo-ter>
+	
+</body>
+</html>

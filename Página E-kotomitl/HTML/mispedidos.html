@@ -1,0 +1,80 @@
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="../JS/mispedidos.js" async defer></script> 
+    <script src="../comprasbien/js/mispedidos.js" async defer></script> 
+    <link rel="stylesheet" href="../CSS/mispedidos.css">
+    <script src="../JS/navbar.js" defer></script> <!--JS de la barra de navegación-->
+	<script src="../JS/footer.js" defer></script> <!--JS del footer-->
+    <title>Historial de Pedidos</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+    </style>
+</head>
+<body>
+    <nav-bar></nav-bar>
+    <div class="container">
+        <h1>Historial de Pedidos</h1>
+        <table id="pedidosTable">
+            <thead>
+                <tr>
+                    <th>Número de Pedido</th>
+                    <th>Fecha de Pedido</th>
+                    <th>Total</th>
+                    <th>Estado</th>
+                    </tr>
+                <tr>
+                    <td>1</td> <!-- Número de Pedido -->
+                    <td>2024-06-01</td> <!-- Fecha de Pedido -->
+                    <td>$500.00</td> <!-- Total -->
+                    <td>Entregado</td> <!-- Estado -->
+                </tr>
+                <tr>
+                    <td>2</td> <!-- Número de Pedido -->
+                    <td>2024-06-03</td> <!-- Fecha de Pedido -->
+                    <td>$300.00</td> <!-- Total -->
+                    <td>En proceso</td> <!-- Estado -->
+                </tr>   <td>3</td> <!-- Número de Pedido -->
+                    <td>2024-06-03</td> <!-- Fecha de Pedido -->
+                    <td>$2500.00</td> <!-- Total -->
+                    <td>En proceso</td> <!-- Estado -->
+                </tr>
+            </thead>
+            <tbody>    
+            <!-- Filas de tabla generadas dinámicamente con JavaScript -->
+            </tbody>
+        </table>
+    
+            <!-- HTML !-->
+        <a href="./catalogo.html">
+            <button class="button-83" role="button">Realizar una nueva compra</button>
+                <!-- Agregar un botón para realizar una nueva compra -->
+        </a>
+    </div>
+    <script>
+        function mostrarPedidos() {
+    const pedidos = JSON.parse(localStorage.getItem('pedidos')) || [];
+    const pedidosTable = document.getElementById('pedidosTable');
+
+    if (pedidos.length === 0) {
+        // Si no hay pedidos, mostrar un mensaje
+        pedidosTable.innerHTML = '<tr><td colspan="4">No hay pedidos realizados.</td></tr>';
+    } else {
+        // Si hay pedidos, generar las filas de la tabla
+        let html = '';
+        pedidos.forEach(pedido => {
+            html += `<tr>
+                        <td>${pedido.numero}</td>
+                        <td>${pedido.fecha}</td>
+                        <td>${pedido.total}</td>
+                        <td>${pedido.estado}</td>
+                    </tr>`;
+        });
+        pedidosTable.querySelector('tbody').innerHTML = html;
+    }
+    }
+    </script>
+    <foo-ter></foo-ter>
+</body>
+</html>
